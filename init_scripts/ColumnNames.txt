@@ -1,0 +1,786 @@
+ACCROP;Area, Cropland
+ACCTEN;Area, Farmland, Cash Tenant Farms
+ACFAILUR;Area, Cropland, Crop Failure
+ACFOWN;Area, Farmland, Full Owner Farms
+ACHARVES;Area, Cropland, Harvested
+ACIDLE;Area, Farmland, Fallow
+ACIMP;Area, Farmland, Improved
+ACIMPMAN;Area, Farmland, Improved, Managed Farms
+ACIMPOWN;Area, Farmland, Improved, Owner-Operated Farms
+ACIMPTEN;Area, Farmland, Improved, Tenant Farms
+ACOTEN;Area, Farmland, Other Tenant Farms
+ACOTH;Area, Farmland, Other
+ACPASTUR;Area, Farmland, Pasture
+ACPOWN;Area, Farmland, Part-Owner
+ACRES;Area, Farmland
+ACRESMAN;Area, Farmland, Manager-Operated
+ACRESOWN;Area, Farmland, Owner-Operated
+ACRESTEN;Area, Farmland, Tenant Farms
+ACUNIOTH;Area, Farmland, Unimproved
+ACWOODS;Area, Farmland, Woods
+AREA;Area
+AREAAC;Area, Approximate
+BLF0;Population, Female, African-American, Age 0
+BLF0_4;Population, Female, African-American, Age 0-4
+BLF1014;Population, Female, African-American, Age 10-14
+BLF1519;Population, Female, African-American, Age 15-19
+BLF2024;Population, Female, African-American, Age 20-24
+BLF21_;Population, Female, African-American, Age 21+
+BLF2529;Population, Female, African-American, Age 25-29
+BLF3034;Population, Female, African-American, Age 30-34
+BLF3544;Population, Female, African-American, Age 35-44
+BLF4554;Population, Female, African-American, Age 45-54
+BLF5_9;Population, Female, African-American, Age 5-9
+BLF5564;Population, Female, African-American, Age 55-64
+BLF6574;Population, Female, African-American, Age 65-74
+BLF75_;Population, Female, African-American, Age 75+
+BLFTOT;Population, Female, African-American
+BLFUNK;Population, Female, African-American, Age Unknown
+BLM0;Population, Male, African-American, Age 0
+BLM0_4;Population, Male, African-American, Age 0-4
+BLM1014;Population, Male, African-American, Age 10-14
+BLM1519;Population, Male, African-American, Age 15-19
+BLM2024;Population, Male, African-American, Age 20-24
+BLM21_;Population, Male, African-American, Age 21+
+BLM2529;Population, Male, African-American, Age 25-29
+BLM3034;Population, Male, African-American, Age 30-34
+BLM3544;Population, Male, African-American, Age 35-44
+BLM4554;Population, Male, African-American, Age 45-54
+BLM5_9;Population, Male, African-American, Age 5-9
+BLM5564;Population, Male, African-American, Age 55-64
+BLM6574;Population, Male, African-American, Age 65-74
+BLM75_;Population, Male, African-American, Age 75+
+BLMTOT;Population, Male, African-American
+BLMUNK;Population, Male, African-American, Age Unknown
+BLTOT;Population, African-American
+cases;Measles cases
+CEREALVA;Value, Cereals
+CH0;Families, No Children Under Age 10
+CH1;Families, 1 Child Under Age 10
+CH1FBW;Families, 1 Child Under Age 10, Caucasian Head, Foreign-Born
+CH1NEG;Families, 1 Child Under Age 10, African-American Head
+CH1NW;Families, 1 Child Under Age 10, Caucasian Head, Native-Born
+CH2;Families, 2 Children Under Age 10
+CH2FBW;Families, 2 Children Under Age 10, Caucasian Head, Foreign-Born
+CH2NEG;Families, 2 Children Under Age 10, African-American Head
+CH2NW;Families, 2 Children Under Age 10, Caucasian Head, Native-Born
+CH3;Families, 3 Children Under Age 10
+CH3_FBW;Families, 3 Children Under Age 10, Caucasian Head, Foreign-Born
+CH3_NEG;Families, 3 Children Under Age 10, African-American Head
+CH3_NW;Families, 3 Children Under Age 10, Caucasian Head, Native-Born
+CH4_;Families, 4 Children Under Age 10
+CHOFBW;Families, 0 Children Under Age 10, Caucasian Head, Foreign-Born
+CHONEG;Families, 0 Children Under Age 10, African-American Head
+CHONW;Families, 0 Children Under Age 10, Caucasian Head, Native-Born
+CROPVAL;Value, Crops, All
+DENSITY;Density, Population
+DWELL;Dwellings
+DWELL1;Dwellings, 1 Family
+DWELL2;Dwellings, 2 Families
+DWELL3_;Dwellings, 3+ Families
+EMERGNEF;Emergency Workers, Female, African-American
+EMERGNEM;Emergency Workers, Male, African-American
+EMERGTOT;Emergency Workers, Regis
+EMERGWF;Emergency Workers, Female, Caucasian
+EMERGWM;Emergency Workers, Male, Caucasian
+EMFARTOT;Emergency Workers, Farm
+EMNFATOT;Emergency Workers, Non-Farm
+EMUNKTOT;Emergency Workers, Residence Unknown
+EQVACTEN;Value, Equipment, Cash Tenant Farms
+EQVAFOWN;Value, Equipment, Fully-Owned Farms
+EQVALMAN;Value, Equipment, Managed Farms
+EQVALTEN;Value, Equipment, Tenant Farms
+EQVAOTEN;Value, Equipment, Other Tenant Farms
+EQVAPOWN;Value, Equipment, Part-Owned Farms
+F0;Population, Female, Age 0
+F0_4;Population, Female, Age 0-4
+F1014;Population, Female, Age 10-14
+F15;Population, Female, Age 15+
+F1519;Population, Female, Age 15-19
+F15DIVOR;Population, Female, Age 15+, Divorced
+F15MARR;Population, Female, Age 15+, Married
+F15SINGL;Population, Female, Age 15+, Single
+F15UNKMS;Population, Female, Age 15+, Marital Status Unknown
+F15WIDOW;Population, Female, Age 15+, Widowed
+F1844;Population, Female, Age 18-44
+F2024;Population, Female, Age 20-24
+F21_;Population, Female, Age 21+
+F2529;Population, Female, Age 25-29
+F3034;Population, Female, Age 30-34
+F3544;Population, Female, Age 35-44
+F4554;Population, Female, Age 45-54
+F5_9;Population, Female, Age 5-9
+F5564;Population, Female, Age 55-64
+F6574;Population, Female, Age 65-74
+F75_;Population, Female, Age 75+
+FACO02;Farms, 0-3 Acres, African-American Farmers
+FACO100;Farms, 100-174 Acres, African-American Farmers
+FACO1000;Farms, 1000+ Acres, African-American Farmers
+FACO1019;Farms, 10-19 Acres, African-American Farmers
+FACO175;Farms, 175-259 Acres, African-American Farmers
+FACO2049;Farms, 20-49 Acres, African-American Farmers
+FACO260;Farms, 260-499 Acres, African-American Farmers
+FACO39;Farms, 3-9 Acres, African-American Farmers
+FACO500;Farms, 500-999 Acres, African-American Farmers
+FACO5099;Farms, 50-99 Acres, African-American Farmers
+FACOCST;Farms, Cash Share Tenants, African-American Farmers
+FACOCTEN;Farms, Cash Tenants, African-American Farmers
+FACOUTEN;Farms, Unknown Tenure, African-American Farmers
+FAM1;Families, 1 Person
+FAM10;Families, 10 People
+FAM11;Families, 11 People
+FAM12_;Families, 12+ People
+FAM2;Families, 2 People
+FAM3;Families, 3 People
+FAM4;Families, 4 People
+FAM5;Families, 5 People
+FAM6;Families, 6 People
+FAM7;Families, 7 People
+FAM8;Families, 8 People
+FAM9;Families, 9 People
+FAMFBW;Families, Caucasian Head, Foreign-Born
+FAMILIES;Families
+FAMNEG;Families, African-American Head
+FAMNW;Families, Caucasian Head, Native-Born
+FAMNWFMP;Families, Caucasian Head, Native- or Foreign-Born or Mixed Parentage
+FAMNWNP;Families, Caucasian Head, Native-Born, Native Parentage
+FAMOTH;Families, Other Race Head
+FANWTEN;Farms, Caucasian Native-Born Tenants
+FAOFBW;Families, Owner, Caucasian Head, Foreign-Born
+FAONEG;Families, Owner, African-American Head
+FAONW;Families, Owner, Caucasian Head, Native-Born
+FAONWFMP;Families, Owner, Caucasian Head, Foreign or Mixed Parentage
+FAONWNP;Families, Owner, Caucasian Head, Native Parentage
+FAOTOT;Families, Owner
+FARFBW;Families, Renter, Caucasian Head, Foreign-Born
+FARM02;Farms, 0-3 Acres
+FARM100;Farms, 100-174 Acres
+FARM1000;Farms, 1000+ Acres
+FARM1019;Farms, 10-19 Acres
+FARM175;Farms, 175-259 Acres
+FARM2049;Farms, 20-49 Acres
+FARM260;Farms, 260-499 Acres
+FARM39;Farms, 3-9 Acres
+FARM500;Farms, 500-999 Acres
+FARM5000;Farms, 5000+ Acres
+FARM5099;Farms, 50-99 Acres
+FARMBUI;Value, Farm Buildings
+FARMCOL;Farms, African-American Farmers
+FARMCOLT;Farms, Nonwhite Tenants
+FARMCOMA;Farms, African-American Farm Managers
+FARMCOOH;Farms, African-American Farmers, Owned/Hired Land
+FARMCOOL;Farms, African-American Farmers, Owned Land
+FARMCOOW;Farms, African-American Farm Owners
+FARMCOST;Farms, African-American Share Tenants
+FARMCOTE;Farms, African-American Tenants
+FARMCST;Farms, Cash Share Tenants
+FARMCTEN;Farms, Cash Tenants
+FARMEQUI;Value, Farm Implements/Machinery
+FARMFAM;Families, Farm
+FARMFBW;Farms, Caucasian Farmers, Foreign-Born
+FARMFBWT;Farms, Caucasian Tenants, Foreign-Born
+FARMFEM;Farms, Female Farmers
+FARMFOWN;Farms, Full Owners
+FARMMALE;Farms, Male Farmers
+FARMMAN;Farms, Manager-Operated
+FARMNEG2;Farms, Nonwhite Farmers
+FARMNW;Farms, Caucasian Farmers, Native-Born
+FARMNWH;Farms, Caucasian Farmers, Native-Born
+FARMNWTE;Farms, Caucasian Tenants, Native-Born
+FARMOH;Farms, Owned/Hired Land
+FARMOL;Farms, Owned Land
+FARMOTEN;Farms, Other Tenant, Tenure N.S.
+FARMOWN;Farms, Owner-Operated
+FARMOWN1;Farms, Owner-Operated, Owned Land
+FARMOWN2;Farms, Owner-Operated, Owned/Hired Land
+FARMPOWN;Farms, Part Owners
+FARMS;Farms
+FARMSCRO;Farms, Sharecroppers
+FARMSCT;Farms, Share Cash Tenants
+FARMSIZE;Area, Average Farm Size
+FARMSREN;Farms, Standing Renter
+FARMSREP;Farms, Reporting
+FARMSTEN;Farms, Share Tenant
+FARMTEN;Farms, Tenant
+FARMUTEN;Farms, Unknown Tenure
+FARMVAL;Value, Farmland/Improvements (Excluding Buildings)
+FARMWH;Farms, Caucasian Farmers
+FARMWHMA;Farms, Caucasian Farm Managers
+FARMWHOH;Farms, Caucasian Owners, Hired Land
+FARMWHOL;Farms, Caucasian Owners, Owned Land
+FARMWHOW;Farms, Caucasian Owners
+FARMWHST;Farms, Caucasian Share Tenants
+FARMWHTE;Farms, Caucasian Tenants
+FARNEG;Families, Renter, African-American Head
+FARNW;Families, Renter, Caucasian Head, Native-Born
+FARNWFMP;Families, Renter, Caucasian Head, Foreign or Mixed Parentage
+FARNWNP;Families, Renter, Caucasian Head, Native Parentage
+FARTOT;Families, Renter
+FAVACTEN;Value, Cash Tenant Farms, Land/Buildings
+FAVAFOWN;Value, Fully-Owned Farms, Land/Buildings
+FAVALCOL;Value, African-American-Owned Farms, Land/Buildings
+FAVALMAN;Value, Managed Farms
+FAVALOWN;Value, Farmland/Implements
+FAVALTEN;Value, Tenant Farms, Farmland/Implements
+FAVALWH;Value, Caucasian-Owned Farms, Land/Buildings
+FAVAOTEN;Value, Other Tenant Farms, Land/Buildings
+FAVAPOWN;Value, Part-Owned Farms, Land/Buildings
+FAWH02;Farms, 0-3 Acres, Caucasian Farmers
+FAWH100;Farms, 100-174 Acres, Caucasian Farmers
+FAWH1000;Farms, 1000+ Acres, Caucasian Farmers
+FAWH1019;Farms, 10-19 Acres, Caucasian Farmers
+FAWH175;Farms, 175-259 Acres, Caucasian Farmers
+FAWH2049;Farms, 20-49 Acres, Caucasian Farmers
+FAWH260;Farms, 260-499 Acres, Caucasian Farmers
+FAWH39;Farms, 3-9 Acres, Caucasian Farmers
+FAWH500;Farms, 500-999 Acres, Caucasian Farmers
+FAWH5099;Farms, 50-99 Acres, Caucasian Farmers
+FAWHCST;Farms, Caucasian Cash Share Tenants
+FAWHCTEN;Farms, Caucasian Cash Tenants
+FAWHUTEN;Farms, Caucasian Tenants, Unknown Tenure
+FBALWF21;Population, Female, Caucasian, Foreign-Born, Age 21+
+FBALWM21;Population, Male, Caucasian, Foreign-Born, Age 21+
+FBALWMVO;Population, Male, Caucasian, Foreign-Born, Alien, Voting Age
+FBFPWF21;Population, Female, Caucasian, Foreign-Born, Age 21+, First Papers
+FBFPWM21;Population, Male, Caucasian, Foreign-Born, Age 21+, First Papers
+FBFPWMVO;Population, Male, Caucasian, Foreign-Born, First Papers, Voting Age
+FBNAWF21;Population, Female, Caucasian, Foreign-Born, Age 21+, Naturalized
+FBNAWM21;Population, Male, Caucasian, Foreign-Born, Age 21+, Naturalized
+FBNAWMVO;Population, Male, Caucasian, Foreign-Born, Naturalized, Voting Age
+FBUNWF21;Population, Female, Caucasian, Foreign-Born, Age 21+, Unknown Status
+FBUNWM21;Population, Male, Caucasian, Foreign-Born, Age 21+, Unknown Status
+FBUNWMVO;Population, Male, Caucasian, Foreign-Born, Unknown Status, Voting Age
+FBW10TOT;Population, Caucasian, Foreign-Born, Age 10+
+FBW614;Population, Caucasian, Foreign-Born, Age 6-14
+FBWF0;Population, Female, Caucasian, Foreign-Born, Age 0
+FBWF0_4;Population, Female, Caucasian, Foreign-Born, Age 0-4
+FBWF1014;Population, Female, Caucasian, Foreign-Born, Age 10-14
+FBWF1519;Population, Female, Caucasian, Foreign-Born, Age 15-19
+FBWF2024;Population, Female, Caucasian, Foreign-Born, Age 20-24
+FBWF21_;Population, Female, Caucasian, Foreign-Born, Age 21+
+FBWF2529;Population, Female, Caucasian, Foreign-Born, Age 25-29
+FBWF3034;Population, Female, Caucasian, Foreign-Born, Age 30-34
+FBWF3544;Population, Female, Caucasian, Foreign-Born, Age 35-44
+FBWF4554;Population, Female, Caucasian, Foreign-Born, Age 45-54
+FBWF5_9;Population, Female, Caucasian, Foreign-Born, Age 5-9
+FBWF5564;Population, Female, Caucasian, Foreign-Born, Age 55-64
+FBWF6574;Population, Female, Caucasian, Foreign-Born, Age 65-74
+FBWF75_;Population, Female, Caucasian, Foreign-Born, Age 75+
+FBWFIL21;Population, Female, Caucasian, Foreign-Born, Age 21+, Illiterate
+FBWFTOT;Population, Female, Caucasian, Foreign-Born
+FBWFUNK;Population, Female, Caucasian, Foreign-Born, Age Unknown
+FBWILL10;Population, Caucasian, Foreign-Born, Age 10+, Illiterate
+FBWM0;Population, Male, Caucasian, Foreign-Born, Age 0
+FBWM0_4;Population, Male, Caucasian, Foreign-Born, Age 0-4
+FBWM1014;Population, Male, Caucasian, Foreign-Born, Age 10-14
+FBWM1519;Population, Male, Caucasian, Foreign-Born, Age 15-19
+FBWM2024;Population, Male, Caucasian, Foreign-Born, Age 20-24
+FBWM21_;Population, Male, Caucasian, Foreign-Born, Age 21+
+FBWM2529;Population, Male, Caucasian, Foreign-Born, Age 25-29
+FBWM3034;Population, Male, Caucasian, Foreign-Born, Age 30-34
+FBWM3544;Population, Male, Caucasian, Foreign-Born, Age 35-44
+FBWM4554;Population, Male, Caucasian, Foreign-Born, Age 45-54
+FBWM5_9;Population, Male, Caucasian, Foreign-Born, Age 5-9
+FBWM5564;Population, Male, Caucasian, Foreign-Born, Age 55-64
+FBWM6574;Population, Male, Caucasian, Foreign-Born, Age 65-74
+FBWM75_;Population, Male, Caucasian, Foreign-Born, Age 75+
+FBWMIL21;Population, Male, Caucasian, Foreign-Born, Age 21+, Illiterate
+FBWMILVO;Population, Male, Caucasian, Voting Age, Illiterate
+FBWMTOT;Population, Male, Caucasian, Foreign-Born
+FBWMUNK;Population, Male, Caucasian, Foreign-Born, Age Unknown
+FBWMVOTE;Population, Male, Caucasian, Foreign-Born, Voting Age
+FBWS614;Population, Caucasian, Foreign-Born, Age 6-14, Enrolled in School
+FBWTOT;Population, Male, Caucasian, Foreign-Born
+FCOLAC;Area, Farms, Nonwhite Farmers
+FDWELLVA;Value, Farm Dwellings
+FHENCUMB;Homes, Farm, Owned, Mortgaged
+FHMTGUNK;Homes, Farm, Encumbrance Unknown
+FHOWFREE;Homes, Farm, Owned, Free
+FHRENT;Homes, Farm, Rented
+FHUNK;Homes, Farm, Tenure Unknown
+FILLIT21;Population, Female, Age 21+, Illiterate
+FLAYOFF;Workers, Female, Laid Off
+FMACOAC;Area, Farms, Nonwhite Managers
+FMACOIAC;Area, Farms, Improved, Nonwhite Managers
+FMACOVAL;Value, Farms, Nonwhite Managers
+FMANAC;Area, Farms, Manager-Operated
+FMANIAC;Area, Farms, Improved, Manager-Operated
+FMANVAL;Value, Farms, Manager-Operated
+FMAWHAC;Area, Farms, Caucasian Managers
+FMAWHIAC;Area, Farms, Improved, Caucasian Managers
+FMAWHVAL;Value, Farms, Caucasian Managers
+FOREST;Value, Forest Products
+FOWCOAC;Area, Farms, African-American Owners
+FOWCOIAC;Area, Farms, Improved, African-American Owners
+FOWCOVAL;Value, Farms, African-American Owners
+FOWNAC;Area, Farms, Owner-Operated
+FOWNCOL;Farm Owners, Nonwhite
+FOWNFBW;Farm Owners, Caucasian, Foreign-Born
+FOWNIAC;Area, Farms, Improved, Owner-Operated
+FOWNNW;Farm Owners, Caucasian, Native-Born
+FOWNVAL;Value, Farms, Owner-Operated
+FOWWHAC;Area, Farms, Caucasian Owners
+FOWWHIAC;Area, Farms, Improved, Caucasian Owners
+FOWWHVAL;Value, Farms, Caucasian Owners
+FRUITVAL;Value, Fruits/Nuts
+FTECOAC;Area, Farms, African-American Tenants
+FTECOIAC;Area, Farms, Improved, African-American Tenants
+FTECOVAL;Value, Farms, African-American Tenants
+FTENAC;Area, Farms, Tenant
+FTENIAC;Area, Farms, Improved, Tenant
+FTENVAL;Value, Farms, Tenant
+FTEWHAC;Area, Farms, Caucasian Tenants
+FTEWHIAC;Area, Farms, Improved, Caucasian Tenants
+FTEWHVAL;Value, Farms, Caucasian Tenants
+FTOT;Population, Female
+FUNEMP;Workers, Female, Unemployed
+FUNK;Population, Female, Age Unknown
+FWHAC;Area, Farms, Caucasian Farmers
+GAINWRK;Workers, Gainful
+GARDEN;Value, Garden Vegetables
+HACCTEN;Area, Farms, Harvested, Cash Tenant
+HACFOWN;Area, Farms, Harvested, Full Owner
+HACMAN;Area, Farms, Harvested, Manager-Operated
+HACOTEN;Area, Farms, Harvested, Other Tenant
+HACPOWN;Area, Farms, Harvested, Part Owner
+HACTEN;Area, Farms, Harvested, Tenant
+HAYVAL;Value, Hay/Forage
+IDSEQ;Gardner-Cohen Sequence Codes
+IDUNIQ;Gardner-Cohen ID Codes
+LANDVAL;Value, Farmland
+LIVSTOCK;Value, Livestock
+M0;Population, Male, Age 0
+M0_4;Population, Male, Age 0-4
+M1014;Population, Male, Age 10-14
+M15;Population, Male, Age 15+
+M1519;Population, Male, Age 15-19
+M15DIVOR;Population, Male, Age 15+, Divorced
+M15MARR;Population, Male, Age 15+, Married
+M15SINGL;Population, Male, Age 15+, Single
+M15UNKMS;Population, Male, Age 15+, Marital Status Unknown
+M15WIDOW;Population, Male, Age 15+, Widowed
+M1844;Population, Male, Age 18-44
+M2024;Population, Male, Age 20-24
+M21_;Population, Male, Age 21+
+M2529;Population, Male, Age 25-29
+M3034;Population, Male, Age 30-34
+M3544;Population, Male, Age 35-44
+M4554;Population, Male, Age 45-54
+M5_9;Population, Male, Age 5-9
+M5564;Population, Male, Age 55-64
+M6574;Population, Male, Age 65-74
+M75_;Population, Male, Age 75+
+MEDFAM;Family Size, Median
+MEDFAMFW;Family Size, Median, Caucasian Head, Foreign-Born
+MEDFAMNE;Family Size, Median, African-American Head
+MEDFAMNW;Family Size, Median, Caucasian Head, Native-Born
+MEDRENFW;Cost, Rent, Median, Homes, Nonfarm, Caucasian Head, Foreign-Born
+MEDRENNE;Cost, Rent, Median, Homes, Nonfarm, African-American Head
+MEDRENNW;Cost, Rent, Median, Homes, Nonfarm, Caucasian Head, Native-Born
+MEDRENT;Cost, Rent, Median, Homes, Nonfarm
+MEDRFFW;Family Size, Median, Rural, Farm, Caucasian Head, Foreign-Born
+MEDRFNEG;Family Size, Median, Rural, Farm, African-American Head
+MEDRFNW;Family Size, Median, Rural, Farm, Caucasian Head, Native-Born
+MEDRFTOT;Family Size, Median, Rural, Farm
+MEDRNFFW;Family Size, Median, Rural, Nonfarm, Caucasian Head, Foreign-Born
+MEDRNFNE;Family Size, Median, Rural, Nonfarm, African-American Head
+MEDRNFNW;Family Size, Median, Rural, Nonfarm, Caucasian Head, Native-Born
+MEDRNFRE;Homes, Nonfarm, Rural, Rented
+MEDRNFTO;Family Size, Median, Rural, Nonfarm
+MEDVAL;Value, Median, Homes, Nonfarm, Owned
+MEDVALFW;Value, Median, Homes, Nonfarm, Owned
+MEDVALNE;Value, Median, Homes, Nonfarm, Owned
+MEDVALNW;Value, Median, Homes, Nonfarm, Owned
+MEDVNFTO;Value, Median, Homes, Nonfarm, Rural, Owned
+MFGAVEAR;Wage Earners, Average, Manufacturing
+MFGESTAB;Establishments, Manufacturing
+MFGFUEL;Cost, Energy, Manufacturing, Fuel/Purchased
+MFGHP;Horsepower, Primary, Manufacturing
+MFGOUT;Value, Output, Manufacturing
+MFGRENTX;Cost, Rent/Taxes, Manufacturing
+MFGRMS;Cost, Materials, Manufacturing
+MFGRMS2;Cost, Materials/Containers, Manufacturing
+MFGVALAD;Value, Added, Manufacturing
+MFGWAGES;Wages, Workers, Manufacturing
+MILLIT21;Population, Male, Age 21+, Illiterate
+MILLVOTE;Population, Male, Voting Age, Illiterate
+MLAYOFF;Workers, Male, Laid Off
+MTOT;Population, Male
+MUNEMP;Workers, Male, Unemployed
+MUNK;Population, Male, Age Unknown
+MVOTE;Population, Male, Voting Age
+NEG10TOT;Population, African-American, Age 10+
+NEG614;Population, African-American, Age 6-14
+NEGFIL21;Population, Female, African-American, Age 21+, Illiterate
+NEGILL10;Population, African-American, Age 10+, Illiterate
+NEGMIL21;Population, Male, African-American, Age 21+, Illiterate
+NEGMILVO;Population, Male, African-American, Voting Age, Illiterate
+NEGMVOTE;Population, Male, African-American, Voting Age
+NEGS614;Population, African-American, Age 6-14, Enrolled in School
+NFARMFAM;Families, Nonfarm
+NFOWNHOM;Homes, Nonfarm, Owned
+NONWHTOT;Population, Nonwhite
+NW10TOT;Population, Caucasian, Native-Born, Age 10+
+NWF0;Population, Female, Caucasian, Native-Born, Age 0
+NWF0_4;Population, Female, Caucasian, Native-Born, Age 0-4
+NWF1014;Population, Female, Caucasian, Native-Born, Age 10-14
+NWF1519;Population, Female, Caucasian, Native-Born, Age 15-19
+NWF2024;Population, Female, Caucasian, Native-Born, Age 20-24
+NWF21_;Population, Female, Caucasian, Native-Born, Age 21+
+NWF2529;Population, Female, Caucasian, Native-Born, Age 25-29
+NWF3034;Population, Female, Caucasian, Native-Born, Age 30-34
+NWF3544;Population, Female, Caucasian, Native-Born, Age 35-44
+NWF4554;Population, Female, Caucasian, Native-Born, Age 45-54
+NWF5_9;Population, Female, Caucasian, Native-Born, Age 5-9
+NWF5564;Population, Female, Caucasian, Native-Born, Age 55-64
+NWF6574;Population, Female, Caucasian, Native-Born, Age 65-74
+NWF75_;Population, Female, Caucasian, Native-Born, Age 75+
+NWFIL21;Population, Female, Caucasian, Native-Born, Age 21+, Illiterate
+NWFMPF21;Population, Female, Caucasian, Native-Born, Age 21+, Foreign/Mixed Parentage
+NWFMPM21;Population, Male, Caucasian, Native-Born, Age 21+, Foreign/Mixed Parentage
+NWFP614;Population, Caucasian, Native-Born, Foreign/Mixed Parents, Age 6-14
+NWFPAUST;Population, Caucasian, Native-Born, Parents Born in Austria
+NWFPCAFR;Population, Caucasian, Native-Born, Parents Born in French Canada
+NWFPCANA;Population, Caucasian, Native-Born, Parents Born in Canada
+NWFPCAOT;Population, Caucasian, Native-Born, Parents Born in Canada (other)
+NWFPDENM;Population, Caucasian, Native-Born, Parents Born in Denmark
+NWFPENGL;Population, Caucasian, Native-Born, Parents Born in England
+NWFPFRAN;Population, Caucasian, Native-Born, Parents Born in France
+NWFPGERM;Population, Caucasian, Native-Born, Parents Born in Germany
+NWFPGREC;Population, Caucasian, Native-Born, Parents Born in Greece
+NWFPHOLL;Population, Caucasian, Native-Born, Parents Born in Holland
+NWFPHUNG;Population, Caucasian, Native-Born, Parents Born in Hungary
+NWFPIREL;Population, Caucasian, Native-Born, Parents Born in Ireland
+NWFPITAL;Population, Caucasian, Native-Born, Parents Born in Italy
+NWFPMVOT;Population, Male, Caucasian, Native-Born, Foreign Parentage, Voting Age
+NWFPNORW;Population, Caucasian, Native-Born, Parents Born in Norway
+NWFPOTH;Population, Caucasian, Native-Born, Parents Born in other countries
+NWFPRUSS;Population, Caucasian, Native-Born, Parents Born in Russia
+NWFPS614;Population, Caucasian, Native-Born, Foreign/Mixed Parents, Age 6-14, Enrolled in School
+NWFPSCOT;Population, Caucasian, Native-Born, Parents Born in Scotland
+NWFPSWED;Population, Caucasian, Native-Born, Parents Born in Sweden
+NWFPSWIT;Population, Caucasian, Native-Born, Parents Born in Switzerland
+NWFPTOT;Population, Caucasian, Native-Born, Foreign Parents
+NWFPWALE;Population, Caucasian, Native-Born, Parents Born in Wales
+NWFTOT;Population, Female, Caucasian, Native-Born
+NWFUNK;Population, Female, Caucasian, Age Unknown
+NWILL10;Population, Caucasian, Native-Born, Age 10+, Illiterate
+NWM0;Population, Male, Caucasian, Native-Born, Age 0
+NWM0_4;Population, Male, Caucasian, Native-Born, Age 0-4
+NWM1014;Population, Male, Caucasian, Native-Born, Age 10-14
+NWM1519;Population, Male, Caucasian, Native-Born, Age 15-19
+NWM2024;Population, Male, Caucasian, Native-Born, Age 20-24
+NWM21_;Population, Male, Caucasian, Native-Born, Age 21+
+NWM2529;Population, Male, Caucasian, Native-Born, Age 25-29
+NWM3034;Population, Male, Caucasian, Native-Born, Age 30-34
+NWM3544;Population, Male, Caucasian, Native-Born, Age 35-44
+NWM4554;Population, Male, Caucasian, Native-Born, Age 45-54
+NWM5_9;Population, Male, Caucasian, Native-Born, Age 5-9
+NWM5564;Population, Male, Caucasian, Native-Born, Age 55-64
+NWM6574;Population, Male, Caucasian, Native-Born, Age 65-74
+NWM75_;Population, Male, Caucasian, Native-Born, Age 75+
+NWMIL21;Population, Male, Caucasian, Native-Born, Age 21+, Illiterate
+NWMILVOT;Population, Male, Caucasian, Native-Born, Voting Age, Illiterate
+NWMPMVOT;Population, Male, Caucasian, Native-Born, Mixed Parentage, Voting Age
+NWMPTOT;Population, Caucasian, Native-Born, Mixed Parentage
+NWMTOT;Population, Male, Caucasian, Native-Born
+NWMUNK;Population, Male, Caucasian, Native-Born, Age Unknown
+NWNP614;Population, Caucasian, Native-Born, Native-Born Parents, Age 6-14
+NWNPF21;Population, Female, Caucasian, Native-Born, Age 21+, Native-Born Parents
+NWNPM21;Population, Male, Caucasian, Native-Born, Age 21+, Native-Born Parents
+NWNPMVOT;Population, Male, Caucasian, Native-Born, Native Parentage, Voting Age
+NWNPS614;Population, Caucasian, Native-Born, Native-Born Parents, Age 6-14, Enrolled in School
+NWNPTOT;Population, Caucasian, Native-Born, Native-Born Parents
+OHENCUMB;Homes, Nonfarm, Owned, Mortgaged
+OHMTGUNK;Homes, Nonfarm, Encumbrance Unknown
+OHOWFREE;Homes, Nonfarm, Owned, Free
+OHRENT;Homes, Nonfarm, Rented
+OHUNK;Homes, Nonfarm, Tenure Unknown
+OTCROPVA;Value, Crops, Other
+OTF0;Population, Female, Other Race, Age 0
+OTF0_4;Population, Female, Other Race, Age 0-4
+OTF1014;Population, Female, Other Race, Age 10-14
+OTF1519;Population, Female, Other Race, Age 15-19
+OTF2024;Population, Female, Other Race, Age 20-24
+OTF21_;Population, Female, Other Race, Age 21+
+OTF2529;Population, Female, Other Race, Age 25-29
+OTF3034;Population, Female, Other Race, Age 30-34
+OTF3544;Population, Female, Other Race, Age 35-44
+OTF4554;Population, Female, Other Race, Age 45-54
+OTF5_9;Population, Female, Other Race, Age 5-9
+OTF5564;Population, Female, Other Race, Age 55-64
+OTF6574;Population, Female, Other Race, Age 65-74
+OTF75_;Population, Female, Other Race, Age 75+
+OTFTOT;Population, Female, Other Race
+OTFUNK;Population, Female, Other Race, Age Unknown
+OTHGRVAL;Value, Grains/Seeds, Other
+OTHMVOTE;Population, Male, Other, Voting Age
+OTHRACES;Population, Native Americans
+OTM0;Population, Male, Other Race, Age 0
+OTM0_4;Population, Male, Other Race, Age 0-4
+OTM1014;Population, Male, Other Race, Age 10-14
+OTM1519;Population, Male, Other Race, Age 15-19
+OTM2024;Population, Male, Other Race, Age 20-24
+OTM21_;Population, Male, Other Race, Age 21+
+OTM2529;Population, Male, Other Race, Age 25-29
+OTM3034;Population, Male, Other Race, Age 30-34
+OTM3544;Population, Male, Other Race, Age 35-44
+OTM4554;Population, Male, Other Race, Age 45-54
+OTM5_9;Population, Male, Other Race, Age 5-9
+OTM5564;Population, Male, Other Race, Age 55-64
+OTM6574;Population, Male, Other Race, Age 65-74
+OTM75_;Population, Male, Other Race, Age 75+
+OTMTOT;Population, Male, Other Race
+OTMUNK;Population, Male, Other Race, Age Unknown
+OWNFREE;Homes, Owned, Free/Clear
+OWNHOM;Homes, Owned
+OWNMORT;Homes, Mortgaged
+OWNUNK;Homes, Mortgage Status Unknown
+P10AG;Population, Age 10+, Agriculture
+P10CLERK;Population, Age 10+, Clerical
+P10DOMP;Population, Age 10+, Domestic/Personal Service
+P10GOVT;Population, Age 10+, Public Service
+P10LF;Population, Age 10+, Gainful Occupations
+P10MFG;Population, Age 10+, Manufacturing
+P10MIN;Population, Age 10+, Mineral Extraction
+P10PROF;Population, Age 10+, Professional Service
+P10TRADE;Population, Age 10+, Trade
+P10TRANS;Population, Age 10+, Transportation
+PBWAFRIC;Population, Caucasian, Born in Africa
+PBWALBAN;Population, Caucasian, Born in Albania
+PBWARMEN;Population, Caucasian, Born in Armenia
+PBWATLIS;Population, Caucasian, Born in Atlantic Islands
+PBWAUSTR;Population, Caucasian, Born in Austria
+PBWAUTRL;Population, Caucasian, Born in Australia
+PBWAZORE;Population, Caucasian, Born in Azores
+PBWBELG;Population, Caucasian, Born in Belgium
+PBWBULG;Population, Caucasian, Born in Bulgaria
+PBWCANAD;Population, Caucasian, Born in Canada
+PBWCANFR;Population, Caucasian, Born in French Canada
+PBWCANOT;Population, Caucasian, Born in Canada (other)
+PBWCENAM;Population, Caucasian, Born in Central America
+PBWCSOAM;Population, Caucasian, Born in Cen/South America
+PBWCUBA;Population, Caucasian, Born in Cuba
+PBWCUBAW;Population, Caucasian, Born in Cuba/West Indies
+PBWCZECH;Population, Caucasian, Born in Czechoslovakia
+PBWDENMK;Population, Caucasian, Born in Denmark
+PBWEIRE;Population, Caucasian, Born in Irish Free State
+PBWENGLA;Population, Caucasian, Born in England
+PBWFINL;Population, Caucasian, Born in Finland
+PBWFRAN;Population, Caucasian, Born in France
+PBWGERM;Population, Caucasian, Born in Germany
+PBWGREEC;Population, Caucasian, Born in Greece
+PBWHOLL;Population, Caucasian, Born in Holland/Netherlands
+PBWHUNG;Population, Caucasian, Born in Hungary
+PBWICEL;Population, Caucasian, Born in Iceland
+PBWIREL;Population, Caucasian, Born in Ireland
+PBWITALY;Population, Caucasian, Born in Italy
+PBWLATVI;Population, Caucasian, Born in Latvia
+PBWLITHU;Population, Caucasian, Born in Lithuania
+PBWLUXEM;Population, Caucasian, Born in Luxemburg
+PBWMEXI;Population, Caucasian, Born in Mexico
+PBWMONTE;Population, Caucasian, Born in Montenegro
+PBWNEWFO;Population, Caucasian, Born in Newfoundland
+PBWNORW;Population, Caucasian, Born in Norway
+PBWOTFOR;Population, Caucasian, Born in other countries
+PBWPACIF;Population, Caucasian, Born in Pacific Islands
+PBWPALES;Population, Caucasian, Born in Palestine/Syria
+PBWPOLAN;Population, Caucasian, Born in Poland
+PBWPORTU;Population, Caucasian, Born in Portugal
+PBWRUMAN;Population, Caucasian, Born in Rumania
+PBWRUSS;Population, Caucasian, Born in Russia
+PBWSCOT;Population, Caucasian, Born in Scotland
+PBWSERB;Population, Caucasian, Born in Serbia
+PBWSOAME;Population, Caucasian, Born in South America
+PBWSPAIN;Population, Caucasian, Born in Spain
+PBWSWED;Population, Caucasian, Born in Sweden
+PBWSWITZ;Population, Caucasian, Born in Switzerland
+PBWSYRIA;Population, Caucasian, Born in Syria
+PBWTURKA;Population, Caucasian, Born in Turkey (Asia)
+PBWTURKE;Population, Caucasian, Born in Turkey (Europe)
+PBWTURKY;Population, Caucasian, Born in Turkey
+PBWULST;Population, Caucasian, Born in Northern Ireland
+PBWWALES;Population, Caucasian, Born in Wales
+PBWWESIN;Population, Caucasian, Born in West Indies
+PBWWSINO;Population, Caucasian, Born in West Indies other
+PBWYUGOS;Population, Caucasian, Born in Yugoslavia
+PRCP;Precipitation, Amount of
+PUFARTOT;Workers, Farms, Partly Unemployed
+PUNEMPNF;Workers, Female, African-American, Partly Unemployed
+PUNEMPNM;Workers, Male, African-American, Partly Unemployed
+PUNEMPTO;Workers, Registered, Partly Unemployed
+PUNEMPWF;Workers, Female, Caucasian, Partly Unemployed
+PUNEMPWM;Workers, Male, Caucasian, Partly Unemployed
+PUNFATOT;Workers, Nonfarm, Partly Unemployed
+PUUNKTOT;Workers, Residence Unknown, Partly Unemployed
+QFAMS;Families, Quasi-
+QFAMSPOP;Population, Quasi-Family Groups
+R100_;Homes, Nonfarm, Rented, Rental Cost 100+
+R1530;Homes, Nonfarm, Rented, Rental Cost 15-29
+R3050;Homes, Nonfarm, Rented, Rental Cost 30-49
+R50100;Homes, Nonfarm, Rented, Rental Cost 50-99
+RADIOREP;Families, Own Radios
+RADREPRF;Families, Rural, Farm, Own Radios
+RADREPUF;Families, Urban, Farm, Own Radios
+RADREPUR;Families, Urban, Own Radios
+RADRPRNF;Families, Rural, Nonfarm, Own Radios
+RENNF_15;Homes, Rural, Nonfarm, Rented, Rental Cost 0-14
+RENNF100;Homes, Rural, Nonfarm, Rented, Rental Cost 100+
+RENNF15;Homes, Rural, Nonfarm, Rented, Rental Cost 15-29
+RENNF30;Homes, Rural, Nonfarm, Rented, Rental Cost 30-49
+RENNF50;Homes, Rural, Nonfarm, Rented, Rental Cost 50-99
+RENNFNR;Homes, Rural, Nonfarm, Rented, Rental Cost Not Reported
+RENTHOM;Homes, Rented
+RETAIL;Businesses, Retail Stores
+RETPROP;Business Owners, Retail
+RETSALES;Sales, Net, Retail Stores
+RETSTOCK;Stocks, End of Year, Retail
+RETTEMP;Workers, Retail Stores
+RETWAGES;Cost, Payroll, Retail Stores
+RFARFAM;Families, Rural, Farm
+RFARFWOW;Families, Rural, Farm, Owners, Caucasian Head, Foreign-Born
+RFARFWRE;Families, Rural, Farm, Renters, Caucasian Head, Foreign-Born
+RFARMFW;Families, Rural, Farm, Caucasian Head, Foreign-Born
+RFARMNEG;Families, Rural, Farm, African-American Head
+RFARMNW;Families, Rural, Farm, Caucasian Head, Native-Born
+RFARMOWN;Families, Rural, Farm, Owners
+RFARMREN;Families, Rural, Farm, Renters
+RFARNEOW;Families, Rural, Farm, Owners, African-American Head
+RFARNERE;Families, Rural, Farm, Renters, African-American Head
+RFARNWFP;Families, Rural, Farm, Caucasian Head, Native-Born, Foreign/Mixed Parentage
+RFARNWNP;Families, Rural, Farm, Caucasian Head, Native-Born, Native Parentage
+RFARNWOW;Families, Rural, Farm, Owners, Caucasian Head, Native-Born
+RFARNWRE;Families, Rural, Farm, Renters, Caucasian Head, Native-Born
+RFCH0;Families, Rural, Farm, 0 Children Age 0-9
+RFCH1;Families, Rural, Farm, 1 Children Age 0-9
+RFCH2;Families, Rural, Farm, 2 Children Age 0-9
+RFCH3;Families, Rural, Farm, 3 Children Age 0-9
+RFCH4_;Families, Rural, Farm, 4+ Children Age 0-9
+RLT15;Homes, Nonfarm, Rented, Rental Cost 0-14
+RNFCH0;Families, Rural, Nonfarm, 0 Children Age 0-9
+RNFCH1;Families, Rural, Nonfarm, 1 Children Age 0-9
+RNFCH2;Families, Rural, Nonfarm, 2 Children Age 0-9
+RNFCH3;Families, Rural, Nonfarm, 3 Children Age 0-9
+RNFCH4_;Families, Rural, Nonfarm, 4+ Children Age 0-9
+RNFFAM;Families, Rural, Nonfarm
+RNFFW;Families, Rural, Nonfarm, Caucasian Head, Foreign-Born
+RNFFWOWN;Families, Rural, Nonfarm, Owners, Caucasian Head, Foreign-Born
+RNFFWREN;Families, Rural, Nonfarm, Renters, Caucasian Head, Foreign-Born
+RNFNEG;Families, Rural, Nonfarm, African-American Head
+RNFNEGOW;Families, Rural, Nonfarm, Owners, African-American Head
+RNFNEREN;Families, Rural, Nonfarm, Renters, African-American Head
+RNFNW;Families, Rural, Nonfarm, Caucasian Head, Native-Born
+RNFNWFP;Families, Rural, Nonfarm, Caucasian Head, Native-Born, Foreign/Mixed Parentage
+RNFNWNP;Families, Rural, Nonfarm, Caucasian Head, Native-Born, Native Parentage
+RNFNWOWN;Families, Rural, Nonfarm, Owners, Caucasian Head, Native-Born
+RNFNWREN;Families, Rural, Nonfarm, Renters, Caucasian Head, Native-Born
+RNFOWN;Families, Rural, Nonfarm, Owners
+RNFREN;Families, Rural, Nonfarm, Renters
+RNOTREP;Homes, Nonfarm, Rented
+RURFARM;Population, Rural, Farm
+RURNFARM;Population, Rural, Nonfarm
+RURPOP;Population, Rural
+T07TOT;Population, Age 0-7
+T1014TOT;Population, Age 10-14
+T1020TOT;Population, Age 10-20
+T10TOT;Population, Age 10+
+T1415TOT;Population, Age 14-15
+T1517TOT;Population, Age 15-17
+T1617TOT;Population, Age 16-17
+T1620TOT;Population, Age 16-20
+T1820TOT;Population, Age 18-20
+T614TOT;Population, Age 6-14
+T620TOT;Population, Age 6-20
+T69TOT;Population, Age 6-9
+T713TOT;Population, Age 7-13
+TENUNK;Homes, Tenure Unknown
+TFARMHOM;Homes, Farm
+TILL1020;Population, Age 10-20, Illiterate
+TILL1620;Population, Age 16-20, Illiterate
+TILLIT10;Population, Age 10+, Illiterate
+TMAX;Temperature, High
+TMIN;Temperature, Low
+TOLAYOFF;Workers, Laid Off
+TOTHHOME;Homes, Nonfarm
+TOTHOM;Homes
+TOTPOP;Population
+TOTUNEMP;Workers, Unemployed
+TSCH1014;Population, Age 10-14, Enrolled in School
+TSCH1415;Population, Age 14-15, Enrolled in School
+TSCH1517;Population, Age 15-17, Enrolled in School
+TSCH1617;Population, Age 16-17, Enrolled in School
+TSCH1820;Population, Age 18-20, Enrolled in School
+TSCH614;Population, Age 6-14, Enrolled in School
+TSCH620;Population, Age 6-20, Enrolled in School
+TSCH69;Population, Age 6-9, Enrolled in School
+TSCH713;Population, Age 7-13, Enrolled in School
+UNEMPNEF;Workers, Female, African-American, Registered, Unemployed
+UNEMPNEM;Workers, Male, African-American, Registered, Unemployed
+UNEMPTOT;Workers, Registered, Unemployed
+UNEMPWF;Workers, Female, Caucasian, Registered, Unemployed
+UNEMPWM;Workers, Male, Caucasian, Registered, Unemployed
+UNFARTOT;Workers, Farm, Unemployed
+UNNFATOT;Workers, Nonfarm, Unemployed
+UNUNKTOT;Workers, Residence Unknown, Unemployed
+URB25;Population, Cities 25K+
+URBFARM;Population, Urban, Farm
+URBPOP;Population, Urban
+V10000_;Homes, Nonfarm, Owned, Value 10+
+V1530;Homes, Nonfarm, Owned, Value 1500-2999
+V3050;Homes, Nonfarm, Owned, Value 3000-4999
+V5075;Homes, Nonfarm, Owned, Value 5000-7499
+V75100;Homes, Nonfarm, Owned, Value 7500-9999
+VEGAVAL;Value, Vegetables
+VLT1500;Homes, Nonfarm, Owned, Value 0-1499
+VNOTREP;Homes, Nonfarm, Owned, Value Not Reported
+VRNF100_;Homes, Rural, Nonfarm, Owned, Value 10+
+VRNF1530;Homes, Rural, Nonfarm, Owned, Value 1500-2999
+VRNF3050;Homes, Rural, Nonfarm, Owned, Value 3000-4999
+VRNF5075;Homes, Rural, Nonfarm, Owned, Value 5000-7499
+VRNF7510;Homes, Rural, Nonfarm, Owned, Value 7500-9999
+VRNFLT15;Homes, Rural, Nonfarm, Owned, Value 0-1499
+VRNFNREP;Homes, Rural, Nonfarm, Owned, Value Not Reported
+WF0;Population, Female, Caucasian, Age 0
+WF0_4;Population, Female, Caucasian, Age 0-4
+WF1014;Population, Female, Caucasian, Age 10-14
+WF1519;Population, Female, Caucasian, Age 15-19
+WF2024;Population, Female, Caucasian, Age 20-24
+WF21_;Population, Female, Caucasian, Age 21+
+WF2529;Population, Female, Caucasian, Age 25-29
+WF3034;Population, Female, Caucasian, Age 30-34
+WF3544;Population, Female, Caucasian, Age 35-44
+WF4554;Population, Female, Caucasian, Age 45-54
+WF5_9;Population, Female, Caucasian, Age 5-9
+WF5564;Population, Female, Caucasian, Age 55-64
+WF6574;Population, Female, Caucasian, Age 65-74
+WF75_;Population, Female, Caucasian, Age 75+
+WFTOT;Population, Female, Caucasian
+WFUNK;Population, Female, Caucasian, Age Unknown
+WHOLEST;Businesses, Wholesale Establishments
+WHOLFEMP;Workers, Female, Wholesale Establishments
+WHOLMEMP;Workers, Male, Wholesale Establishments
+WHOLNSAL;Sales, Net, Wholesale Establishments
+WHOLSTOC;Stocks, End of Year, Wholesale Establishments
+WHOLTEMP;Workers, Wholesale Establishments
+WHOLWAGE;Cost, Payroll, Wholesale Establishments
+WHTOT;Population, Caucasian
+WM0;Population, Male, Caucasian, Age 0
+WM0_4;Population, Male, Caucasian, Age 0-4
+WM1014;Population, Male, Caucasian, Age 10-14
+WM1519;Population, Male, Caucasian, Age 15-19
+WM2024;Population, Male, Caucasian, Age 20-24
+WM21_;Population, Male, Caucasian, Age 21+
+WM2529;Population, Male, Caucasian, Age 25-29
+WM3034;Population, Male, Caucasian, Age 30-34
+WM3544;Population, Male, Caucasian, Age 35-44
+WM4554;Population, Male, Caucasian, Age 45-54
+WM5_9;Population, Male, Caucasian, Age 5-9
+WM5564;Population, Male, Caucasian, Age 55-64
+WM6574;Population, Male, Caucasian, Age 65-74
+WM75_;Population, Male, Caucasian, Age 75+
+WMTOT;Population, Male, Caucasian
+WMUNK;Population, Male, Caucasian, Age Unknown
+PRCP;Precipitation
+TMIN;Temperature, Low
+TMAX;Temperature, High
+CASES;Measles Cases

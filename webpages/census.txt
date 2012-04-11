@@ -1,0 +1,740 @@
+ACCROP,  Total acres cropland 
+ACCTEN,  Acres in cash tenant farms 
+ACFAILUR,  # acres w/ crop failure 
+ACFOWN,  Acres in full owner farms 
+ACHARVES,  # acres cropland harvested 
+ACIDLE,  # acres idle/fallow land 
+ACIMP,  # improved acres farmland 
+ACIMPMAN,  Improved acres/managed farms 
+ACIMPOWN,  Improved acres/owner-operated farms 
+ACIMPTEN,  Improved acres/tenant farms 
+ACMAN,  Acres in manager-operated farms 
+ACOTEN,  Acres in other tenant farms 
+ACOTH,  # other acres farms 
+ACPASTUR,  # acres pasture land 
+ACPOWN,  Acres in part owner farms 
+ACRES,  # acres in farms 
+ACRESMAN,  Acres in manager-operated farms 
+ACRESOWN,  Acres in owner-operated farms 
+ACRESTEN,  Acres in tenant farms 
+ACTEN,  Acres in tenant farms 
+ACUNIOTH,  # other unimproved acres farms 
+ACWOODS,  # acres in woodland in farms 
+AREA,  Area (square miles) 
+AREAAC,  Approx area in acres 
+BLF0,  Negro females aged 0 
+BLF0_4,  Negro females aged 0-4 
+BLF1014,  Negro females aged 10-14 
+BLF1519,  Negro females aged 15-19 
+BLF2024,  Negro females aged 20-24 
+BLF21_,  Negro females aged 21+ 
+BLF2529,  Negro females aged 25-29 
+BLF3034,  Negro females aged 30-34 
+BLF3544,  Negro females aged 35-44 
+BLF4554,  Negro females aged 45-54 
+BLF5564,  Negro females aged 55-64 
+BLF5_9,  Negro females  aged 5-9 
+BLF6574,  Negro females aged 65-74 
+BLF75_,  Negro females aged 75+ 
+BLFTOT,  Negro females all ages 
+BLFUNK,  Negro females unknown ages 
+BLM0,  Negro males aged 0 
+BLM0_4,  Negro males aged 0-4 
+BLM1014,  Negro males aged 10-14 
+BLM1519,  Negro males aged 15-19 
+BLM2024,  Negro males aged 20-24 
+BLM21_,  Negro males aged 21+ 
+BLM2529,  Negro males aged 25-29 
+BLM3034,  Negro males aged 30-34 
+BLM3544,  Negro males aged 35-44 
+BLM4554,  Negro males aged 45-54 
+BLM5564,  Negro males aged 55-64 
+BLM5_9,  Negro males aged 5-9 
+BLM6574,  Negro males aged 65-74 
+BLM75_,  Negro males aged 75+ 
+BLMTOT,  Negro males all ages 
+BLMUNK,  Negro males unknown ages 
+BLTOT,  Total Negro population
+CEREALVA,  Value of cereals 
+CH0,  Families having no children under age 10 
+CH1,  Families having 1 child under age 10 
+CH1FBW,  Families w/ foreign-born white head having 1 child under age 10 
+CH1NEG,  Families w/ negro head having 1 child under age 10 
+CH1NW,  Families w/ native white head having 1 child under age 10 
+CH2,  Families having 2 children under age 10 
+CH2FBW,  Families w/ foreign-born white head having 2 children under age 10 
+CH2NEG,  Families w/ negro head having 2 children under age 10 
+CH2NW,  Families w/ native white head having 2 children under age 10 
+CH3,  Families having 3 children under age 10 
+CH3_FBW,  
+CH3_NEG,  Families w/ negro head having 3 or more children under age 10 
+CH3_NW,  Families w/ native white head having 3 or more children under age 10 
+CH4_,  Families having 4 or more children under age 10 
+CHOFBW,  Families w/ foreign-born white head having no children under age 10 
+CHONEG,  Families w/ negro head having no children under age 10 
+CHONW,  Families w/ native white head having no children under age 10 
+COUNTY,  ICPSR county code 
+CROPVAL,  Value of all crops 
+DENSITY,  Population per square mile 
+DWELL,  # dwellings 
+DWELL1,  Dwellings with 1 family 
+DWELL2,  Dwellings with 2 families 
+DWELL3_,  Dwellings with 3 or more families 
+DWELLTOT,  Total dwellings
+EMERGNEF,  Negro female emergency workers  
+EMERGNEM,  Negro male emergency workers 
+EMERGTOT,  Total regis emergency workers 
+EMERGWF,  White female emergency workers 
+EMERGWM,  White male emergency workers 
+EMFARTOT,  Total farm emergency workers 
+EMNFATOT,  Total nonfarm emergency workers 
+EMUNKTOT,  Total emergency workers residence unknown 
+EQVACTEN,  Value equipment cash tenant farms 
+EQVAFOWN,  Value equipment fully owned farms 
+EQVALMAN,  Value equipment managed farms 
+EQVALTEN,  Value equipment tenant farms 
+EQVAOTEN,  Value equipment other tenant farms 
+EQVAPOWN,  Value equipment part owned farms 
+F0,  Total females aged 0 
+F0_4,  Total females aged 0-4 
+F1014,  Total females aged 10-14 
+F15,  Female population 15+ 
+F1519,  Total females aged 15-19 
+F15DIVOR,  Divorced female population 15+ 
+F15MARR,  Married female population 15+ 
+F15SINGL,  Single female population 15+ 
+F15UNKMS,  Females 15+ unknown marital status 
+F15WIDOW,  Widowed female population 15+ 
+F1844,  Females aged 18-44 
+F2024,  Total females aged 20-24 
+F21,  Female population 21+ 
+F21_,  Total females aged 21+ 
+F2529,  Total females aged 25-29 
+F3034,  Total females aged 30-34 
+F3544,  Total females aged 35-44 
+F4554,  Total females aged 45-54 
+F5564,  Total females aged 55-64 
+F5_9,  Total females aged 5-9 
+F6574,  Total females aged 65-74 
+F75_,  Total females aged 75+ 
+FACO02,  # farms <3 acres colored farmers 
+FACO100,  # farms 100-174 acres colored farmers 
+FACO1000,  # farms 1000+ acres colored farmers 
+FACO1019,  # farms 10-19 acres colored farmers 
+FACO175,  # farms 175-259 acres colored farmers 
+FACO2049,  # farms 20-49 acres colored farmers 
+FACO260,  # farms 260-499 acres colored farmers 
+FACO39,  # farms 3-9 acres colored farmers 
+FACO500,  # farms 500-999 acres colored farmers 
+FACO5099,  # farms 50-99 acres colored farmers 
+FACOCST,  # farms colored cash share tenants 
+FACOCTEN,  # farms colored cash tenants 
+FACOUTEN,  # colored farms unknown tenure 
+FAFBWTEN,  # farms foreign white tenants 
+FAM1,  Families with 1 person 
+FAM10,  Families with 10 persons 
+FAM11,  Families with 11 persons 
+FAM12_,  Families with 12 or more persons 
+FAM2,  Families with 2 persons 
+FAM3,  Families with 3 persons 
+FAM4,  Families with 4 persons 
+FAM5,  Families with 5 persons 
+FAM6,  Families with 6 persons 
+FAM7,  Families with 7 persons 
+FAM8,  Families with 8 persons 
+FAM9,  Families with 9 persons 
+FAMFBW,  Families w/ foreign-born white head 
+FAMILIES,  # families 
+FAMNEG,  Families w/ negro head 
+FAMNW,  Families w/ native white head 
+FAMNWFMP,  Families w/ native white/foreign or mixed parentage head 
+FAMNWNP,  Families w/ native white/native parentage head 
+FAMOTH,  Families w/ other race head 
+FAMTOT,  Total families
+FANEGTEN,  # farms Negro/other tenants 
+FANWTEN,  # farms native white tenants 
+FAOFBW,  Owner families w/ foreign-born white head 
+FAONEG,  Owner families w/ negro head 
+FAONW,  Owner families w/ native white head 
+FAONWFMP,  Owner families w/ native white/foreign or mixed parentage head 
+FAONWNP,  Owner families w/ native white/native parentage head 
+FAOTOT,  Total owner families
+FARFBW,  Renter families w/ foreign-born white head 
+FARM02,  # farms <3 acres 
+FARM100,  # farms 100-174 acres 
+FARM1000,  # farms 1000+ acres 
+FARM1019,  # farms 10-19 acres 
+FARM175,  # farms 175-259 acres 
+FARM2049,  # farms 20-49 acres 
+FARM260,  # farms 260-499 acres 
+FARM39,  # farms 3-9 acres 
+FARM500,  # farms 500-999 acres 
+FARM5000,  # farms 5000+ acres 
+FARM5099,  # farms 50-99 acres 
+FARMBUI,  Value farm buildings 
+FARMCOL,  # farms colored farmers 
+FARMCOLT,  # farms Negro/non-white tenants 
+FARMCOMA,  # farms colored farm managers 
+FARMCOOH,  Colored farms w/ owned/hired land 
+FARMCOOL,  Colored farms w/ only owned land 
+FARMCOOW,  # farms colored farm owners 
+FARMCOST,  # farms colored share tenants 
+FARMCOTE,  # farms colored tenants 
+FARMCST,  # cash share tenant farms 
+FARMCTEN,  # cash tenant farms 
+FARMEQUI,  Value farm implements/machinery 
+FARMFAM,  Farm families 
+FARMFBW,  Total farms foreign white farmers 
+FARMFBW2,  # farms foreign white farmers 
+FARMFBWT,  # farms foreign white tenants 
+FARMFEM,  # farms female farmers 
+FARMFOWN,  # farms full owners 
+FARMMALE,  # farms male farmers 
+FARMMAN,  # manager-operated farms 
+FARMNEG,  Total farms Negro/other farmers 
+FARMNEG2,  # farms Negro/other farmers 
+FARMNW,  # farms native white farmers 
+FARMNWH,  Total farms native white farmers 
+FARMNWH2,  # farms native white farmers 
+FARMNWTE,  # farms native white tenants 
+FARMOH,  # farms w/ owned/hired land 
+FARMOL,  # farms w/ only owned land 
+FARMOTEN,  # other tenant farms tenure n.s. 
+FARMOWN,  # owner-operated farms 
+FARMOWN1,  # owner-operated farms/only owned land 
+FARMOWN2,  # owner-operated farms/owned/hired land 
+FARMPOWN,  # farms part owners 
+FARMS,  Total # of farms 
+FARMSCRO,  # share croppers farms 
+FARMSCT,  # share cash tenant farms 
+FARMSIZE,  Av farm size (acres) 
+FARMSREN,  # standing renter farms 
+FARMSREP,  # farms reporting 
+FARMST,  # share tenant farms 
+FARMSTEN,  # share tenant farms 
+FARMTEN,  # tenant farms 
+FARMUTEN,  # farms unknown tenure 
+FARMVAL,  Value of farmland/improvements (excluding buildings) 
+FARMWH,  # farms white farmers 
+FARMWHMA,  # farms white farm managers 
+FARMWHOH,  White farms w/ owned/hired land 
+FARMWHOL,  White farms w/ only owned land 
+FARMWHOW,  # farms white farm owners 
+FARMWHST,  # farms white share tenants 
+FARMWHTE,  # farms white tenants 
+FARNEG,  Renter families w/ negro head 
+FARNW,  Renter families w/ native white head 
+FARNWFMP,  Renter families w/ native white/foreign or mixed parentage head 
+FARNWNP,  Renter families w/ native white/native parentage head 
+FARTOT,  Total renter families 
+FAVACTEN,  Value land/buildings of cash tenant farms 
+FAVAFOWN,  Value land/buildings of fully owned farms 
+FAVALCOL,  Value land/buildings of colored farms 
+FAVALMAN,  Value of managed farms 
+FAVALOWN,  Value of farmland/implements, owner-operated farms 
+FAVALTEN,  Value of farmland/implements/tenant farms 
+FAVALWH,  Value land/buildings of white farms 
+FAVAOTEN,  Value land/buildings of other tenant farms 
+FAVAPOWN,  Value land/buildings of part owned farms 
+FAWH02,  # farms <3 acres white farmers 
+FAWH100,  # farms 100-174 acres white farmers 
+FAWH1000,  # farms 1000+ acres white farmers 
+FAWH1019,  # farms 10-19 acres white farmers 
+FAWH175,  # farms 175-259 acres white farmers 
+FAWH2049,  # farms 20-49 acres white farmers 
+FAWH260,  # farms 260-499 acres white farmers 
+FAWH39,  # farms 3-9 acres white farmers 
+FAWH500,  # farms 500-999 acres white farmers 
+FAWH5099,  # farms 50-99 acres white farmers 
+FAWHCST,  # farms white cash share tenants 
+FAWHCTEN,  # farms white cash tenants 
+FAWHUTEN,  # white farms unknown tenure 
+FBALWF21,  Foreign alien white females 21+ 
+FBALWM21,  Foreign alien white males 21+ 
+FBFPWF21,  Foreign white females/first papers 21+ 
+FBFPWM21,  Foreign white males/first papers 21+ 
+FBNAWF21,  Foreign naturalized white females 21+ 
+FBNAWM21,  Foreign naturalized white males 21+ 
+FBUNWF21,  Foreign white females/unknown status 21+ 
+FBUNWM21,  For white males/unknown status 21+ 
+FBW10TOT,  Total foreign white population 10+ 
+FBWF0,  Foreign-born white females aged 0 
+FBWF0_4,  Foreign-born white females aged 0-4 
+FBWF1014,  Foreign-born white females aged 10-14 
+FBWF1519,  Foreign-born white females aged 15-19 
+FBWF2024,  Foreign-born white females aged 20-24 
+FBWF21,  Foreign white females 21+ 
+FBWF21_,  Foreign-born white females aged 21+ 
+FBWF2529,  Foreign-born white females aged 25-29 
+FBWF3034,  Foreign-born white females aged 30-34 
+FBWF3544,  Foreign-born white females aged 35-44 
+FBWF4554,  Foreign-born white females aged 45-54 
+FBWF5564,  Foreign-born white females aged 55-64 
+FBWF5_9,  Foreign-born white females aged 5-9 
+FBWF6574,  Foreign-born white females aged 65-74 
+FBWF75_,  Foreign-born white females aged 75+ 
+FBWFIL21,  Total illiterate foreign white females 21+ 
+FBWFTOT,  Foreign white female population 
+FBWFUNK,  Foreign-born white females unknown ages 
+FBWILL10,  Illiterate foreign white population 10+ 
+FBWM0,  Foreign-born white males aged 0 
+FBWM0_4,  Foreign-born white males aged 0-4 
+FBWM1014,  Foreign-born white males aged 10-14 
+FBWM1519,  Foreign-born white males aged 15-19 
+FBWM2024,  Foreign-born white males aged 20-24 
+FBWM21,  Foreign white males 21+ 
+FBWM21_,  Foreign-born white males aged 21+ 
+FBWM2529,  Foreign-born white males aged 25-29 
+FBWM3034,  Foreign-born white males aged 30-34 
+FBWM3544,  Foreign-born white males aged 35-44 
+FBWM4554,  Foreign-born white males aged 45-54 
+FBWM5564,  Foreign-born white males aged 55-64 
+FBWM5_9,  Foreign-born white males aged 5-9 
+FBWM6574,  Foreign-born white males aged 65-74 
+FBWM75_,  Foreign-born white males aged 75+ 
+FBWMIL21,  Total illiterate for white males 21+ 
+FBWMTOT,  Foreign white male population 
+FBWMUNK,  Foreign-born white males unknown ages 
+FBWOWNFA,  # foreign white farm owners 
+FCOLAC,  Acres colored farmers 
+FDWELLVA,  Value farm dwellings 
+FILLIT21,  Total illiterate females 21+ 
+FIPS,  FIPS state code 
+FLAYOFF,  Female laid-off workers 
+FMACOAC,  Acres farms colored managers 
+FMACOIAC,  Improved acres farms colored managers 
+FMACOVAL,  Value farms colored managers 
+FMANAC,  Acres manager-operated farms 
+FMANIAC,  Improved acres manager-operated farms 
+FMANVAL,  Value manager-operated farms 
+FMAWHAC,  Acres farms white managers 
+FMAWHIAC,  Improved acres farms white managers 
+FMAWHVAL,  Value farms white managers 
+FOREST,  Value of forest products 
+FOWCOAC,  Acres farms colored farm owners 
+FOWCOIAC,  Improved acres farms colored farm owners 
+FOWCOVAL,  Value farms colored farm owners 
+FOWNAC,  Acres owner-operated farms 
+FOWNCOL,  # Negro/other farm owners 
+FOWNFBW,  # foreign white farm owners 
+FOWNIAC,  Improved acres owner-operated farms 
+FOWNNW,  # native white farm owners 
+FOWNVAL,  Value owner-operated farms 
+FOWWHAC,  Acres farms white farm owners 
+FOWWHIAC,  Improved acres farms white farm owners 
+FOWWHVAL,  Value farms white farm owners 
+FRUITVAL,  Value of fruits & nuts 
+FTECOAC,  Acres farms colored tenants 
+FTECOIAC,  Improved acres farms colored tenants 
+FTECOVAL,  Value farms colored tenants 
+FTENAC,  Acres tenant farms 
+FTENIAC,  Improved acres tenant farms 
+FTENVAL,  Value tenant farms 
+FTEWHAC,  Acres farms white tenants 
+FTEWHIAC,  Improved acres farms white tenants 
+FTEWHVAL,  Value farms white tenants 
+FTOT,  Total female population 
+FUNEMP,  Female unemployed workers 
+FUNK,  Total females unknown ages 
+FWHAC,  Acres white farmers 
+Families,  w/ foreign-born white head having 3 or more children under 
+GAINWRK,  # gainful workers 
+GARDEN,  Value of garden vegetables 
+HACCTEN,  Harvested acres in cash tenant farms 
+HACFOWN,  Harvested acres in full owner farms 
+HACMAN,  Harvested acres in manager-operated farms 
+HACOTEN,  Harvested acres in other tenant farms 
+HACPOWN,  Harvested acres in part owner farms 
+HACTEN,  Harvested acres in tenant farms 
+HAYVAL,  Value of hay & forage 
+IDSEQ,  Gardner-Cohen sequence codes 
+IDUNIQ,  Gardner-Cohen ID codes 
+LANDVAL,  Value land in farms 
+LEVEL,  State=2 USA=3 
+LIVSTOCK,  Value farm livestock 
+M0,  Total males aged 0 
+M0_4,  Total males aged 0-4 
+M1014,  Total males aged 10-14 
+M15,  Male population 15+ 
+M1519,  Total males aged 15-19 
+M15DIVOR,  Divorced male population 15+ 
+M15MARR,  Married male population 15+ 
+M15SINGL,  Single male population 15+ 
+M15UNKMS,  Males 15+ unknown marital status 
+M15WIDOW,  Widowed male population 15+ 
+M1844,  Males aged 18-44 
+M2024,  Total males aged 20-24 
+M21,  Male population 21+ 
+M21_,  Total males aged 21+ 
+M2529,  Total males aged 25-29 
+M3034,  Total males aged 30-34 
+M3544,  Total males aged 35-44 
+M4554,  Total males aged 45-54 
+M5564,  Total males aged 55-64 
+M5_9,  Total males aged 5-9 
+M6574,  Total males aged 65-74 
+M75_,  Total males aged 75+ 
+MEDFAM,  Median family size, all families 
+MEDFAMFW,  Median family size, families w/ foreign-born white head 
+MEDFAMNE,  Median family size, families w/ negro head 
+MEDFAMNW,  Median family size, families w/ native white head 
+MEDRENFW,  Rented nonfarm homes, median rent, foreign-born white tenants 
+MEDRENNE,  Rented nonfarm homes, median rent, negro tenants 
+MEDRENNW,  Rented nonfarm homes, median rent, native white tenants 
+MEDRENT,  Rented nonfarm homes, median rent, all tenants 
+MEDRFFW,  Median family size, rural farm families w/ foreign-born white head 
+MEDRFNEG,  Median family size, rural farm families w/ negro head 
+MEDRFNW,  Median family size, rural farm families w/ native white head 
+MEDRFTOT,  Median family size, all rural farm families 
+MEDRNFFW,  
+MEDRNFNE,  Median family size, rural nonfarm families w/ negro head 
+MEDRNFNW,  Median family size, rural nonfarm families w/ native white head 
+MEDRNFRE,  Rented rural nonfarm homes, median rent, all tenants 
+MEDRNFTO,  Median family size, all rural nonfarm families 
+MEDVAL,  Owned nonfarm homes median value, all owners 
+MEDVALFW,  Owned nonfarm homes median value, foreign-born white owners 
+MEDVALNE,  Owned nonfarm homes median value, negro owners 
+MEDVALNW,  Owned nonfarm homes median value, native white owners 
+MEDVNFTO,  Owned rural nonfarm homes median value, all owners 
+MFGAVEAR,  Av # manufacturing wage earners 
+MFGESTAB,  # manufacturing establishments 
+MFGFUEL,  Cost manufacturing fuel/purchased energy 
+MFGHP,  Manufacturing primary horsepower 
+MFGOUT,  Value manufacturing output 
+MFGRENTX,  Total manufacturing rent & taxes 
+MFGRMS,  Cost of materials manufacturing 
+MFGRMS2,  Cost materials & containers in manufacturing 
+MFGVALAD,  Manufacturing value added 
+MFGWAGES,  Total manufacturing wages (workers) 
+MILLIT21,  Total illiterate males 21+ 
+MLAYOFF,  Male laid-off workers 
+MTOT,  Total male population 
+MUNEMP,  Male unemployed workers 
+MUNK,  Total males unknown ages 
+Median,  family size, rural nonfarm families w/ foreign-born white 
+NAME,  Name of state/county 
+NEG10TOT,  Total Negro population 10+ 
+NEGF21,  Negro females 21+ 
+NEGFIL21,  Total illiterate Negro females 21+ 
+NEGFTOT,  Negro female population 
+NEGILL10,  Illiterate Negro population 10+ 
+NEGM21,  Negro males 21+ 
+NEGMIL21,  Total illiterate Negro males 21+ 
+NEGMTOT,  Negro male population 
+NEGOWNFA,  # Negro/other farm owners 
+NFARMFAM,  Nonfarm families
+NFOWNHOM,  Owned nonfarm homes
+NFRENTAL,  Rented nonfarm homes
+NONWHTOT,  Total nonwhite population
+NW10TOT,  Total native white population 10+ 
+NWF0,  Native white females aged 0 
+NWF0_4,  Native white females aged 0-4 
+NWF1014,  Native white females aged 10-14 
+NWF1519,  Native white females aged 15-19 
+NWF2024,  Native white females aged 20-24 
+NWF21_,  Native white females aged 21+ 
+NWF2529,  Native white females aged 25-29 
+NWF3034,  Native white females aged 30-34 
+NWF3544,  Native white females aged 35-44 
+NWF4554,  Native white females aged 45-54 
+NWF5564,  Native white females aged 55-64 
+NWF5_9,  Native white females aged 5-9 
+NWF6574,  Native white females aged 65-74 
+NWF75_,  Native white females aged 75+ 
+NWFIL21,  Total illiterate native white females 21+ 
+NWFMPF21,  Native white females 21+ foreign/mixed parentage 
+NWFMPM21,  Nat white males 21+ foreign/mixed parentage 
+NWFPTOT,  Population native white/foreign parents 
+NWFTOT,  Native white female population 
+NWFUNK,  Native white females unknown ages 
+NWILL10,  Illiterate native white population 10+ 
+NWM0,  Native white males aged 0 
+NWM0_4,  Native white males aged 0-4 
+NWM1014,  Native white males aged 10-14 
+NWM1519,  Native white males aged 15-19 
+NWM2024,  Native white males aged 20-24 
+NWM21_,  Native white males aged 21+ 
+NWM2529,  Native white males aged 25-29 
+NWM3034,  Native white males aged 30-34 
+NWM3544,  Native white males aged 35-44 
+NWM4554,  Native white males aged 45-54 
+NWM5564,  Native white males aged 55-64 
+NWM5_9,  Native white males aged 5-9 
+NWM6574,  Native white males aged 65-74 
+NWM75_,  Native white males aged 75+ 
+NWMIL21,  Total illiterate nat white males 21+ 
+NWMPTOT,  Population native white/mixed parentage 
+NWMTOT,  Native white male population 
+NWMUNK,  Native white males unknown ages 
+NWNPF21,  Native white females 21+ native parents 
+NWNPM21,  Native white males 21+ native parents 
+NWNPTOT,  Population native white/native parents 
+NWOWNFA,  # native white farm owners 
+ORDER,  
+OTCROPVA,  Value of all other crops 
+OTF0,  Other females aged 0 
+OTF0_4,  Other females aged 0-4 
+OTF1014,  Other females aged 10-14 
+OTF1519,  Other females aged 15-19 
+OTF2024,  Other females aged 20-24 
+OTF21_,  Other females aged 21+ 
+OTF2529,  Other females aged 25-29 
+OTF3034,  Other females aged 30-34 
+OTF3544,  Other females aged 35-44 
+OTF4554,  Other females aged 45-54 
+OTF5564,  Other females aged 55-64 
+OTF5_9,  Other females aged 5-9 
+OTF6574,  Other females aged 65-74 
+OTF75_,  Other females aged 75+ 
+OTFTOT,  Other females all ages 
+OTFUNK,  Other females unknown ages 
+OTHF21,  Females other races 21+ 
+OTHGRVAL,  Value of other grains & seeds 
+OTHM21,  Males other races 21+ 
+OTHRACES,  Indians, Chinese, Japanese, others 
+OTM0,  Other males aged 0 
+OTM0_4,  Other males aged 0-4 
+OTM1014,  Other males aged 10-14 
+OTM1519,  Other males aged 15-19 
+OTM2024,  Other males aged 20-24 
+OTM21_,  Other males aged 21+ 
+OTM2529,  Other males aged 25-29 
+OTM3034,  Other males aged 30-34 
+OTM3544,  Other males aged 35-44 
+OTM4554,  Other males aged 45-54 
+OTM5564,  Other males aged 55-64 
+OTM5_9,  Other males aged 5-9 
+OTM6574,  Other males aged 65-74 
+OTM75_,  Other males aged 75+ 
+OTMTOT,  Other males all ages 
+OTMUNK,  Other males unknown ages 
+OWNFREE,  Homes owned free/clear 
+OWNHOM,  Owned homes 
+OWNMORT,  Homes mortgaged 
+OWNUNK,  Homes mortgage status unknown 
+P10AG,  Population 10+ in agriculture, etc 
+P10CLERK,  Population 10+ in clerical occupations 
+P10DOMP,  Population 10+ in domestic/personal service 
+P10GOVT,  Population 10+ in public service 
+P10LF,  Population 10+ in gainful occupations 
+P10MFG,  Population 10+ in manufacturing 
+P10MIN,  Population 10+ in mineral extraction 
+P10PROF,  Population 10+ in professional service 
+P10TRADE,  Population 10+ in trade 
+P10TRANS,  Population 10+ in transportation
+PBWALBAN,  Whites born in Albania 
+PBWARMEN,  Whites born in Armenia 
+PBWATLIS,  Whites born in Atlantic Islands 
+PBWAUSTR,  Whites born in Austria 
+PBWAUTRL,  Whites born in Australia 
+PBWAZORE,  Whites born in Azores 
+PBWBELG,  Whites born in Belgium 
+PBWBULG,  Whites born in Bulgaria 
+PBWCANAD,  Whites born in Canada 
+PBWCANFR,  Whites born in French Canada 
+PBWCANOT,  Whites born in Canada (other) 
+PBWCENAM,  Whites born in Central America 
+PBWCSOAM,  Whites born in Cen/South America 
+PBWCUBA,  Whites born in Cuba 
+PBWCZECH,  Whites born in Czechoslovakia 
+PBWDENMK,  Whites born in Denmark 
+PBWEIRE,  Whites born in Irish Free State 
+PBWENGLA,  Whites born in England 
+PBWFINL,  Whites born in Finland 
+PBWFRAN,  Whites born in France 
+PBWGERM,  Whites born in Germany 
+PBWGREEC,  Whites born in Greece 
+PBWHOLL,  Whites born in Holland/Netherlands 
+PBWHUNG,  Whites born in Hungary 
+PBWICEL,  Whites born in Iceland 
+PBWIREL,  Whites born in Ireland 
+PBWITALY,  Whites born in Italy 
+PBWLATVI,  Whites born in Latvia 
+PBWLITHU,  Whites born in Lithuania 
+PBWLUXEM,  Whites born in Luxemburg 
+PBWMEXI,  Whites born in Mexico 
+PBWNEWFO,  Whites born in Newfoundland 
+PBWNORW,  Whites born in Norway 
+PBWOTFOR,  Whites born in other countries 
+PBWPACIF,  Whites born in Pacific Islands 
+PBWPALES,  Whites born in Palestine/Syria 
+PBWPOLAN,  Whites born in Poland 
+PBWPORTU,  Whites born in Portugal 
+PBWRUMAN,  Whites born in Rumania 
+PBWRUSS,  Whites born in Russia 
+PBWSCOT,  Whites born in Scotland 
+PBWSOAME,  Whites born in South America 
+PBWSPAIN,  Whites born in Spain 
+PBWSWED,  Whites born in Sweden 
+PBWSWITZ,  Whites born in Switzerland 
+PBWSYRIA,  Whites born in Syria 
+PBWTURKY,  Whites born in Turkey 
+PBWULST,  Whites born in Northern Ireland 
+PBWWALES,  Whites born in Wales 
+PBWWESIN,  Whites born in West Indies 
+PBWWSINO,  Whites born West Indies other 
+PBWYUGOS,  Whites born in Yugoslavia 
+PUFARTOT,  Total partly unemployed on farms
+PUNEMPNF,  Negro female partly unemployed
+PUNEMPNM,  Negro male partly unemployed
+PUNEMPTO,  Total registered partly unemployed
+PUNEMPWF,  White female partly unemployed
+PUNEMPWM,  White male partly unemployed
+PUNFATOT,  Total nonfarm partly unemployed
+PUUNKTOT,  Total partly unemployed residence unknown
+QFAMS,  Quasi-family groups
+QFAMSPOP,  Population in quasi-family groups
+R100_,  Rented nonfarm homes, rental more than $100 
+R1530,  Rented nonfarm homes, rental $15-$29 
+R3050,  Rented nonfarm homes, rental $30-$49 
+R50100,  Rented nonfarm homes, rental $50-$99 
+RADIOREP,  Total families reporting radios
+RADREPRF,  Rural farm families reporting radios 
+RADREPUF,  Urban farm families reporting radios 
+RADREPUR,  Urban families reporting radios 
+RADRPRNF,  Rural nonfarm families reporting radios 
+REGION1,  U.S. Census Region (9) 
+REGION2,  U.S. Census Region (5) 
+RENNF100,  Rented rural nonfarm homes, rental more than $100 
+RENNF15,  Rented rural nonfarm homes, rental $15-$29 
+RENNF30,  Rented rural nonfarm homes, rental $30-$49 
+RENNF50,  Rented rural nonfarm homes, rental $50-$99 
+RENNFNR,  Rented rural nonfarm homes, rental not reported 
+RENNF_15,  Rented rural nonfarm homes, rental less than $15 
+RENTHOM,  Rented homes 
+RETAIL,  # retail distrib stores 
+RETPROP,  # retail proprietors/firm members 
+RETSALES,  Net sales retail stores 
+RETSTOCK,  Retail stocks/end of year 
+RETTEMP,  Total employees retail stores 
+RETWAGES,  Total payroll retail stores 
+RFARFAM,  Total rural farm families
+RFARFWOW,  Rural farm owner families w/ foreign-born white head 
+RFARFWRE,  Rural farm renter families w/ foreign-born white head 
+RFARMFW,  Rural farm families w/ foreign-born white head 
+RFARMNEG,  Rural farm families w/ negro head 
+RFARMNW,  Rural farm families w/ native white head 
+RFARMOWN,  Total rural farm owner families
+RFARMREN,  Total rural farm renter families
+RFARNEOW,  Rural farm owner families w/ negro head 
+RFARNERE,  Rural farm renter families w/ negro head 
+RFARNWFP,  Rural farm families w/ native white/foreign or mixed parentage head 
+RFARNWNP,  Rural farm families w/ native white/native parentage head 
+RFARNWOW,  Rural farm owner families w/ native white head 
+RFARNWRE,  Rural farm renter families w/ native white head 
+RFCH0,  Rural farm families having no children under age 10 
+RFCH1,  Rural farm families having 1 child under age 10 
+RFCH2,  Rural farm families having 2 children under age 10 
+RFCH3,  Rural farm families having 3 children under age 10 
+RFCH4_,  Rural farm families having 4 or more children under age 10 
+RLT15,  Rented nonfarm homes, rental less than $15 
+RNFCH0,  Rural nonfarm families having no children under age 10 
+RNFCH1,  Rural nonfarm families having 1 child under age 10 
+RNFCH2,  Rural nonfarm families having 2 children under age 10 
+RNFCH3,  Rural nonfarm families having 3 children under age 10 
+RNFCH4_,  Rural nonfarm families having 4 or more children under age 10 
+RNFFAM,  Total rural nonfarm families
+RNFFW,  Rural nonfarm families w/ foreign-born white head 
+RNFFWOWN,  Rural nonfarm owner families w/ foreign-born white head 
+RNFFWREN,  Rural nonfarm renter families w/ foreign-born white head 
+RNFNEG,  Rural nonfarm families w/ negro head 
+RNFNEGOW,  Rural nonfarm owner families w/ negro head 
+RNFNEREN,  Rural nonfarm renter families w/ negro head 
+RNFNW,  Rural nonfarm families w/ native white head 
+RNFNWFP,  
+RNFNWNP,  Rural nonfarm families w/ native white/native parentage head 
+RNFNWOWN,  Rural nonfarm owner families w/ native white head 
+RNFNWREN,  Rural nonfarm renter families w/ native white head 
+RNFOWN,  Total rural nonfarm owner families
+RNFREN,  Total rural nonfarm renter families
+RNOTREP,  Rented nonfarm homes, rental not reported 
+RURPOP,  Rural population
+RURFARM,  Rural-farm population
+RURNFARM,  Rural-nonfarm population
+Rural,  nonfarm families w/ native white/foreign or mixed parentage 
+STATE,  ICPSR state code 
+T07TOT,  Total population aged 0-7 
+T10TOT,  Total population 10+ 
+T1415TOT,  Total population aged 14-15 
+T1617TOT,  Total population aged 16-17 
+T1620TOT,  Total population aged 16-20 
+T1820TOT,  Total population aged 18-20 
+T713TOT,  Total population aged 7-13 
+TENUNK,  Homes tenure unknown 
+TILL1620,  Total illiterate population 16-20 
+TILLIT10,  Total illiterate population 10+ 
+TOLAYOFF,  Total laid-off workers 
+TOTHOM,  Total homes 
+TOTPOP,  Total population
+TOTPOP2,  Total population (2) 
+TOTUNEMP,  Total unemployed workers 
+TSCH1415,  Population 14-15 in school 
+TSCH1617,  Population 16-17 in school 
+TSCH1820,  Population 18-20 in school 
+TSCH713,  Population 7-13 in school 
+UNEMPNEF,  Negro female registered unemployed
+UNEMPNEM,  Negro male registered unemployed
+UNEMPTOT,  Total registered unemployed
+UNEMPWF,  White female registered unemployed
+UNEMPWM,  White male registered unemployed
+UNFARTOT,  Total unemployed on farms
+UNNFATOT,  Total nonfarm unemployed
+UNUNKTOT,  Total unemployed residence unknown
+URB25,  Population cities 25K+
+URBPOP,  Urban population 
+URBFARM,  Urban-farm population
+V10000_,  Owned nonfarm homes value more than $10,000 
+V1530,  Owned nonfarm homes value $1500-$2999 
+V3050,  Owned nonfarm homes value $3000-$4999 
+V5075,  Owned nonfarm homes value $5000-$7499 
+V75100,  Owned nonfarm homes value $7500-$9999 
+VEGAVAL,  Value of vegatables 
+VLT1500,  Owned nonfarm homes value less than $1500 
+VNOTREP,  Owned nonfarm homes value not reported 
+VRNF100_,  Owned rural nonfarm homes value more than $10,000 
+VRNF1530,  Owned rural nonfarm homes value $1500-$2999 
+VRNF3050,  Owned rural nonfarm homes value $3000-$4999 
+VRNF5075,  Owned rural nonfarm homes value $5000-$7499 
+VRNF7510,  Owned rural nonfarm homes value $7500-$9999 
+VRNFLT15,  Owned rural nonfarm homes value less than $1500 
+VRNFNREP,  Owned rural nonfarm homes value not reported 
+WF0,  White females aged 0 
+WF0_4,  White females aged 0-4 
+WF1014,  White females aged 10-14 
+WF1519,  White females aged 15-19 
+WF2024,  White females aged 20-24 
+WF21_,  White females aged 21+ 
+WF2529,  White females aged 25-29 
+WF3034,  White females aged 30-34 
+WF3544,  White females aged 35-44 
+WF4554,  White females aged 45-54 
+WF5564,  White females aged 55-64 
+WF5_9,  White females aged 5-9 
+WF6574,  White females aged 65-74 
+WF75_,  White females aged 75+ 
+WFTOT,  Total white females 
+WFUNK,  White females unknown ages 
+WHOLEST,  # wholesale establishments 
+WHOLFEMP,  Female employees wholesale establishments 
+WHOLMEMP,  Male employees wholesale establishments 
+WHOLNSAL,  Net sales wholesale establishments 
+WHOLSTOC,  Wholesale stocks/end of year 
+WHOLTEMP,  Total employees wholesale establishments 
+WHOLWAGE,  Salaries/wages wholesale establishments 
+WHTOT,  Total white population 
+WM0,  White males aged 0 
+WM0_4,  White males aged 0-4 
+WM1014,  White males aged 10-14 
+WM1519,  White males aged 15-19 
+WM2024,  White males aged 20-24 
+WM21_,  White males aged 21+ 
+WM2529,  White males aged 25-29 
+WM3034,  White males aged 30-34 
+WM3544,  White males aged 35-44 
+WM4554,  White males aged 45-54 
+WM5564,  White males aged 55-64 
+WM5_9,  White males aged 5-9 
+WM6574,  White males aged 65-74 
+WM75_,  White males aged 75+ 
+WMTOT,  Total white males 
+WMUNK,  White males unknown ages
