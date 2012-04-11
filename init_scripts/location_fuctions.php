@@ -32,7 +32,7 @@
 
 //getLocation("NEW YORK", "", "NEW YORK");
 
-function getLocationID($state, $county, $city, $choice = -1)
+function getLocationID($state, $county = "", $city = "", $choice = LOCATION_ALL)
 {
 
 
