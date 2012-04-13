@@ -41,13 +41,13 @@
                 
                 <div class="row">
                         <div class="span8">
-                                <form class="well form-horizontal" onsubmit="return validate()" action="sendQuery.php" method="POST">
+                                <form class="well form-horizontal" action="sendQuery.php" method="GET">
                                         <fieldset>
                                         <p>Please select two variable types:</p>
                                                 <div class="control-group" id="typeone-group">
                                                         <label class="control-label" for="typeone">Type One:</label>
                                                         <div class="controls" id="for-typeone">
-                                                                <select id="typeone">
+                                                                <select name="typeone" id="typeone">
                                                                         <option value="NULL">Please Select a Type</option>
                                                                         <?php 
                                                                                 foreach($arrayoftypes as $key=> $value)
@@ -61,7 +61,7 @@
                                                 <div class="control-group" id="typetwo-group">
                                                         <label class="control-label" for="typetwo">Type Two:</label>
                                                         <div class="controls" id="for-typetwo">
-                                                                <select id="typetwo">
+                                                                <select name="typetwo" id="typetwo">
                                                                         <option value="NULL">Please Select a Type</option>
                                                                         <?php 
                                                                                 foreach($arrayoftypes as $key=> $value)
@@ -75,7 +75,7 @@
                                                 <div class="control-group" id="typethree-group">
                                                         <label class="control-label" for="typetwo">Type Three:</label>
                                                         <div class="controls" id="for-typethree">
-                                                                <select id="typethree">
+                                                                <select name="typethree" id="typethree">
                                                                         <option value="NULL">Please Select a Type</option>
                                                                         <?php 
                                                                                 foreach($arrayoftypes as $key=> $value)
@@ -89,7 +89,7 @@
                                                 <div class="control-group" id="typefour-group">
                                                         <label class="control-label" for="typefour">Type Four:</label>
                                                         <div class="controls" id="for-typefour">
-                                                                <select id="typefour">
+                                                                <select name="typefour" id="typefour">
                                                                         <option value="NULL">Please Select a Type</option>
                                                                         <?php 
                                                                                 foreach($arrayoftypes as $key=> $value)
@@ -104,28 +104,28 @@
                                                 <div class="control-group" id="location-group">
                                                         <label class="control-label" for="location">Location:</label>
                                                         <div class="controls" id="for-location">
-                                                                <select id="location" disabled="true">
+                                                                <select name="location" id="location" disabled="true">
                                                                         <option value="NULL">Please Select a Type</option>
                                                                 </select>
                                                         </div>
                                                 </div>
-                                                <p>Please select a begin and end date (Format MM/dd/YYYY):</p>
-                                                <p>Please look below for valid dates.</p>
+                                                <p>Please select a begin and end date (Format YYYY-MM-DD):</p>
+                                                <?php //<p>Please look below for valid dates.</p> ?>
                                                 
                                                 <div class="control-group" id="beginDate-group">
                                                         <label class="control-label" for="beginDate">Begin Date:</label>
                                                         <div class="controls" id="for-beginDate">
-                                                                <input type="text" id="beginDate" disabled="true">
+                                                                <input type="text" name="beginDate" id="beginDate" <?php //disabled="true"?>>
                                                         </div>
                                                 </div>
                                                 <div class="control-group" id="endDate-group">
                                                         <label class="control-label" for="endDate">End Date:</label>
                                                         <div class="controls" id="for-endDate">
-                                                                <input type="text" id="endDate" disabled="true">
+                                                                <input type="text" name="endDate" id="endDate" <?php //disabled="true"?>>
                                                         </div>
                                                 </div>
                                                 <div class="form-actions">
-                                                        <button class="btn btn-primary" type="submit" style="width: 150px" id="submit" onsubmit="return validate()">Submit</button>
+                                                        <button class="btn btn-primary" type="submit" style="width: 150px" id="submit">Submit</button>
                                                 </div>
                                         </fieldset>
                                 </form>
@@ -140,7 +140,7 @@
 
   
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-<script>
+  <script>
         var typeone = null; 
         var typetwo = null;
         var locationData = null;
@@ -169,9 +169,8 @@
                                         var locationDrop = $("#location");
                                         for(i = 0; i <  locations.length; i++)
                                         {       
-                                        	if (i == 0 || strcmp(locations[i], locations[i-1]) != 0)
-                                                var idsplit = locations[i].split(" - ");
-                                                locationDrop.append($("<option />").val(idsplit[1]).text(idsplit[0]));
+                                            var idsplit = locations[i].split(" - ");
+                                            locationDrop.append($("<option />").val(idsplit[1]).text(idsplit[0]));
                                         }
                 }
                 else
@@ -181,7 +180,7 @@
                 }
             }
         });
-        }
+        }/*
         $("#location").change(function() {
                 locationData = $("#location").val();
                 $.ajax({
@@ -199,10 +198,6 @@
                                         {
                                                 stringOfDates = stringOfDates + dates[i] + "<br />";
                                         }
-                                        //$("#dateRange").html('<p>Possible date spans:</p><p>' + dates[0] + ' - ' + dates[i-1] +  '</p>');
-                                        //var start = dates[0].split("-");
-                                        //var end = dates[i-1].split("-");
-                                        //$("#dateRange").html('<p>Date Span:</p><p>' + start + ' - ' + end + '</p>');
                                         $("#dateRange").html('<p>Possible date spans:</p><p>' + stringOfDates + '</p>');
                                         
                 }
@@ -213,7 +208,7 @@
                 }
             }
         });
-        });
+        });*/
         function validate()
         {
                 /*var dateOne = $("#beginDate").val();

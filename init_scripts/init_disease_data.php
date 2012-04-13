@@ -72,7 +72,7 @@
 			$endDate = dayYear_to_YearMonthDay($startDay + 6, $year);
 			//Make insert queries for each data column
 			for($i = 0; $i < count($columns); $i++) {
-                $j = $i + 3;
+                $j = $i + 4;
 				$query = "INSERT INTO $columns[$i] VALUES (NULL, 
 													'$startDate',
 													'$endDate',

@@ -1,10 +1,5 @@
 <?php
 
-/*$dbserver = "localhost:3306";
-$dbusername = "root";
-$dbpassword = "root";
-$dbname = "user_information";*/
-
 $dbserver = "mysql.cs.pitt.edu";
 $dbname = "cs1630History";
 $dbusername = "tbl8";

@@ -215,7 +215,7 @@
         }
         else if($function == 3)
         {
-            /* Get variables sent by search.php */
+            	/* Get variables sent by search.php */
                 $typeone = strtolower($_GET['typeone']);
                 $typetwo = strtolower($_GET['typetwo']);
 				if ($_GET['typethree'])
@@ -230,64 +230,74 @@
 				//echo "$typetwo<br />";
 				
 				/* Get available location ids for data types */
-               
+                $queryOne = "SELECT location, unit FROM $typeone, locations WHERE '$typeone'.location = location._ID";
+                
 				//echo "$queryOne<br />";
-               
-                //$queryTwo = "SELECT DISTINCT location FROM ".$typetwo;
+                $resultOne = mysql_query($queryOne) or die("Error typeone: ".mysql_error());
+                $queryTwo = "SELECT location FROM ".$typetwo;
 				//echo "$queryTwo<br />";
-                //$resultTwo = mysql_query($queryTwo) or die("Error typetwo: ".mysql_error());
+                $resultTwo = mysql_query($queryTwo) or die("Error typetwo: ".mysql_error());
+				if ($typethree)
+				{
+					$queryThree = "SELECT location FROM ".$typethree;
+                	$resultThree = mysql_query($queryThree) or die("Error typethree: ".mysql_error());
+				}
+                if ($typefour)
+				{
+					$queryFour = "SELECT location FROM ".$typefour;
+                	$resultFour = mysql_query($queryFour) or die("Error typefour: ".mysql_error());
+				}
+				
+                ini_set('memory_limit', '-1');
+                $counter = 0;
+                $locationOneArray;
+                $counterTwo = 0;
+                $locationTwoArray;
+				if ($typethree)
+				{
+					$counterThree = 0;
+                	$locationThreeArray;
+				}
 				if ($typefour)
 				{
-					$queryFour = "SELECT DISTINCT location FROM ".$typefour;
-                	$resultFour = mysql_query($queryFour) or die("Error typefour: ".mysql_error());
-				} else if ($typethree)
-				{
-					$queryOne = "SELECT DISTINCT location FROM ".$typeone.", " .$typetwo. ", " .$typethree. " ORDER BY location ASC";
-				} else
-                {
-                     $queryOne = "SELECT DISTINCT location FROM ".$typeone.", " .$typetwo. " ORDER BY location ASC";
-                }
-                $result = mysql_query($query) or die("Error typeone: ".mysql_error());
-                
-                
-                /* Store all returned locations in arrays */
+					$counterFour = 0;
+                	$locationFourArray;
+				}
+				
+				/* Store all returned locations in arrays */
                 while($locOne = mysql_fetch_array($resultOne))
                 {
-                        $locationOneArray['location'][$counter] = $locOne['location'];
-                       // $locationOneArray['unit'][$counter] = $locOne['unit'];
-                        
+                        $locationOneArray[$counter]['location'] = $locOne['location'];
 						//echo "$locationOneArray[$counter]<br />";
                         $counter++;
                 }
-				//$locationOneArray = array_unique($locationOneArray);
+				$locationOneArray = array_unique($locationOneArray);
                 while($locTwo = mysql_fetch_array($resultTwo))
                 {
-                        $locationTwoArray['location'][$counterTwo] = $locTwo['location'];
-                        //$locationTwoArray['unit'][$counterTwo] = $locTwo['unit'];
+                        $locationTwoArray[$counterTwo]['location'] = $locTwo['location'];
                         $counterTwo++;
                 }
-				//$locationTwoArray = array_unique($locationTwoArray);
+				$locationTwoArray = array_unique($locationTwoArray);
 				if ($typethree)
 				{
 					while($locThree = mysql_fetch_array($resultThree))
                 	{
-                        $locationThreeArray['location'][$counterThree] = $locThree['location'];
-                        //$locationThreeArray['unit'][$counterThre] = $locThree['unit'];
+                        $locationThreeArray[$counterThree]['location'] = $locThree['location'];
                         $counterThree++;
                 	}
-					//$locationThreeArray = array_unique($locationThreeArray);
+					$locationThreeArray = array_unique($locationThreeArray);
 				}
 				if ($typefour)
 				{
 					while($locFour = mysql_fetch_array($resultFour))
                 	{
-                        $locationFourArray[$counterFour] = $locFour['location'];
+                        $locationFourArray[$counterFour]['location'] = $locFour['location'];
                         $counterFour++;
                 	}
-					//$locationFourArray = array_unique($locationFourArray);
+					$locationFourArray = array_unique($locationFourArray);
 				}
-                
-                 /* Find intersections of two arrays */
+				
+                /* Find intersections of two - four arrays */
                 $results = array_intersect($locationOneArray, $locationTwoArray);
 				if ($typethree)
 				{
@@ -298,29 +308,163 @@
 					$results = array_intersect($results, $locationFourArray);
 				}
                 
+				
                 //$results is an array of all all the locations in the data tables these could
                 //be county or city
+                //print_r($locations);
+                
+                
                 //print_r($results);
-                
-                
+                $counter = 0;
+                     
+                for($i = 0; $i < count($results); $i++)
+                {
+                    //echo $results[$i]['location'] . "<br />";
+                    
+                    if ($results[$i]['location'] == 0)
+                        continue;
+                    $query = "SELECT unit FROM locations WHERE _ID = '" . $results[$i]['location']. "'";
+                    
+                    $ret = mysql_query($query) or die("$query error: ".mysql_error());
+                    //echo $query . "<br />";
+                    //$counter = 0;
+                     
+                    //while(
+                    $units = mysql_fetch_array($ret);
+                    //{
+                        $results[$counter]['unit'] =  $units['unit'];
+                        $counter++;
+                        // $units['unit'] . "<br />";
+                    //}
+                }
                 
                 //for($i = 0; $i < count($results); $i++)
                 //{
-                    $query = "SELECT unit FROM locations WHERE _ID = '" . $results['location'][0] . "'";
-                    
-                    $ret = mysql_query($query) or die("LocOne query error: ".mysql_error());
-                    echo $query . "<br />";
-                    //$counter = 0;
-                     
-                    //while($units= mysql_fetch_array($query))
-                    //{
-                        $results['unit'][] =  mysql_fetch_array($ret, MYSQL_ASSOC);
-                  //      $counter++;
-                    //}
+                    //$counties
                 //}
                 
-                print_r($results);
+                //results now has a multi dimensional array
+                //print_r($results);
+                
+                for($i = 0; $i < count($results); $i++)
+                {
+                    if ($results[$i]['location'] == 0)
+                        continue;
+                    $query = "SELECT parent_ID FROM locations_map WHERE child_ID = '" . $results[$i]['location']. "'";
+                    
+                    $ret = mysql_query($query) or die("$query error: ".mysql_error());
+                    //echo $query . "<br />";
+                    //$counter = 0;
+                     
+                    while($ID = mysql_fetch_array($ret))
+                    {
+                        $states[] = $ID['parent_ID'];
+                    }
+                }
+                
+                $states = array_unique($states);
+                
+                print_r($states);
                 
                 
+                
+                
+        }else if($function == 4)
+        {
+            /* Get variables sent by search.php */
+            $typeone = strtolower($_GET['typeone']);
+            $typetwo = strtolower($_GET['typetwo']);
+            if ($_GET['typethree'])
+            {
+                $typethree = strtolower($_GET['typethree']);
+            }
+            if ($_GET['typefour'])
+            {
+                $typefour = strtolower($_GET['typefour']);
+            }
+        
+            $start_time = gettimeofday(true);
+    
+            print_r(get_states_from_table($typeone));
+        
+            end_time($start_time);
+            
+            $start_time = gettimeofday(true);
+    
+            print_r(get_states_from_table($typetwo));
+        
+            end_time($start_time);
         }
+        
+        function get_states_from_table($table_name)
+        {
+            /* Get available location ids for data types */
+            $query = "SELECT DISTINCT location FROM $table_name";
+            
+            $ret = mysql_query($query) or die("$query error: ".mysql_error());
+            
+            $i = 0;
+            
+            while($row = mysql_fetch_array($ret))
+            {
+                //If the location is zero there was an error so skip it
+                if($row['location'] == 0)
+                    continue;
+                    
+                    
+                $locations[$i]['location'] = $row['location'];
+                $i++;  
+            }
+            
+            //return $locations;
+                
+            for($i = 0; $i < count($locations); $i++)
+            {
+                //echo $results[$i]['location'] . "<br />";
+                
+                //if ($locations[$i]['location'] == 0)
+                //    continue;
+                $query = "SELECT unit FROM locations WHERE _ID = '" . $locations[$i]['location']. "'";
+                
+                $ret = mysql_query($query) or die("$query error: ".mysql_error());
+               
+                $units = mysql_fetch_array($ret);
+                
+                $locations[$i]['unit'] =  $units['unit'];
+                //$counter++;
+            }
+            
+            //return $locations;
+           
+            for($i = 0; $i < count($locations); $i++)
+            {
+                //4 is a state location
+                if($locations[$i]['unit'] == 4)
+                    continue;
+                    
+                $query = "SELECT parent_ID FROM locations_map WHERE child_ID = '" . $locations[$i]['location']. "'";
+                    
+                $ret = mysql_query($query) or die("$query error: ".mysql_error());
+                //echo $query . "<br />";
+                //$counter = 0;
+                 
+                while($row = mysql_fetch_array($ret))
+                {
+                    $states[] = $row['parent_ID'];
+                }
+            }
+            
+            return array_unique($states);
+        
+        }
+        
+        function end_time($start_time)
+        {
+            $end_time = gettimeofday(true);
+            //echo date("d M Y : hi:s.u", $end_time) . "<br />"; 
+            
+            $tot_time = $end_time - $start_time;
+            echo "<br />" . $tot_time . " seconds <br />";        
+        }
+        
 ?>
