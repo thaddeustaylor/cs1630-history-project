@@ -70,7 +70,8 @@
 				lng double,
 				lat double,
                 X int,
-                Y int)")
+                Y int,
+                prefix char(255))")
 	or die ("locations Invalid: " . mysql_error());
     
     
@@ -87,7 +88,9 @@
                                                 '$table[3]',
                                                 '$table[4]',
                                                 '$table[5]',
-                                                '$table[6]')";
+                                                '$table[6]',
+                                                '$table[6]'
+                                                )";
                                                               
             mysql_query($query) or die ("locations Invalid insert " . mysql_error());
     }
@@ -153,7 +156,112 @@
                                                               
         mysql_query($query) or die ("locations_unit Invalid insert " . mysql_error());
     }
+  
     
+/******************************************
+*    Create the measurement_category table
+*
+*   
+*/
+    
+	/* Drop table if needed */
+	$result = mysql_query ("DROP TABLE IF EXISTS measurement_category") or die ("measurement_category Invalid: " . mysql_error());
+	/* Create table */
+    $result = mysql_query(
+			"CREATE TABLE measurement_category (
+				_ID int primary key not null auto_increment,
+				desc char(255) not null,
+                inconvertible_flag boolean not null)")
+                
+	or die ("measurement_category Invalid: " . mysql_error());
+    
+    
+    $line = file("measurement_category.csv", FILE_IGNORE_NEW_LINES) or die("File not found!");
+    
+    /* Loop through each row in file */
+    foreach($line as $row)
+    {
+        /* Get the table name */
+        $table = explode(",", addslashes(rtrim($row)));
+        $query = "INSERT into measurement_category values ('$table[0]',
+                                                   '$table[1]',
+                                                   '$table[2]'
+                                                   )";
+                                                              
+        mysql_query($query) or die ("measurement_category Invalid insert " . mysql_error());
+    }
+
+/******************************************
+*    Create the measurement_conversion table
+*
+*   
+*/
+    
+	/* Drop table if needed */
+	$result = mysql_query ("DROP TABLE IF EXISTS measurement_conversion") or die ("measurement_conversion Invalid: " . mysql_error());
+	/* Create table */
+    $result = mysql_query(
+			"CREATE TABLE measurement_conversion (
+				from_unit int not null,
+				to_unit int not null,
+                pre_add_factor double not null,
+                mult_factor double not null,
+                post_add_factor double not null )")
+                
+	or die ("measurement_conversion Invalid: " . mysql_error());
+    
+    
+    $line = file("measurement_conversion.csv", FILE_IGNORE_NEW_LINES) or die("File not found!");
+    
+    /* Loop through each row in file */
+    foreach($line as $row)
+    {
+        /* Get the table name */
+        $table = explode(",", addslashes(rtrim($row)));
+        $query = "INSERT into measurement_conversion values ('$table[0]',
+                                                   '$table[1]',
+                                                   '$table[2]',
+                                                   '$table[3]',
+                                                   '$table[4]')";
+                                                              
+        mysql_query($query) or die ("measurement_conversion Invalid insert " . mysql_error());
+    }
+    
+/******************************************
+*    Create the measurement_unit table
+*
+*   
+*/
+    
+	/* Drop table if needed */
+	$result = mysql_query ("DROP TABLE IF EXISTS measurement_unit") or die ("measurement_unit Invalid: " . mysql_error());
+	/* Create table */
+    $result = mysql_query(
+			"CREATE TABLE measurement_unit (
+				_ID int primary key not null auto_increment,
+				desc chat(255) not null,
+                category int not null)")
+                
+	or die ("measurement_unit Invalid: " . mysql_error());
+    
+    
+    $line = file("measurement_unit.csv", FILE_IGNORE_NEW_LINES) or die("File not found!");
+    
+    /* Loop through each row in file */
+    foreach($line as $row)
+    {
+        /* Get the table name */
+        $table = explode(",", addslashes(rtrim($row)));
+        $query = "INSERT into measurement_unit values ('$table[0]',
+                                                   '$table[1]',
+                                                   '$table[2]'
+                                                   )";
+                                                              
+        mysql_query($query) or die ("measurement_unit Invalid insert " . mysql_error());
+    }
+  
+  
+  
 /******************************************
 *    Create the data type tables
 *
