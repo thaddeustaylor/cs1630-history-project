@@ -1,8 +1,3 @@
-<html>
-<head>
-	<title>Measles Data Input Script</title>
-</head>
-<body>
 <?php
 	/*
 		This is the script to upload the data from the measles datasets
@@ -30,72 +25,105 @@
 	mysql_select_db("cs1630History") or die(mysql_error());
 	
 	//Create an array for the filenames
-	$filenames = array("Baltimore_MD_measweek.csv", 
-                       "Boston_MA_measweek.csv", 
-                       "Charleston_SC_measweek.csv",
-                       "New York_NY_measweek.csv");
-                       
-	//Create an array of the column names
-	$columns = array( "cases", "prcp", "tmin", "tmax");
-	//Create an array for the data types
-	$datatypes = array("CASES OF MEASLES", "INCHES", "F", "F");
+	$filenames = array("Boston_MA_measweek_condensed.csv");                   
 	
-    $pubdate = "01/01/1952";
-	
-	//Go through each file and extract its data to place in the table
-	foreach($filenames as $filename) {
-		$tuples = file("../submit/data/" . $filename, FILE_IGNORE_NEW_LINES) or die("$filename not found");
-		//Remove the line with the column headers
-		unset($tuples[0]);
-		//Get the location
+    foreach($filenames as $filename) {
         
-		$location = explode("_", addslashes(rtrim($filename)));
+        //echo "$filename <br/>";
+        init_disease_csv($filename);
+    }
+    
+    
+    function init_disease_csv($filename)
+    {
+        
+        $tuples = file("../submit/data/" . $filename, FILE_IGNORE_NEW_LINES) or die("$filename not found");
+        //Remove the line with the column headers
+        unset($tuples[0]);
+        
+        //Create an array of the column names
+        $columns = array( "cases", "prcp", "tmin", "tmax");
+        
+        //Create an array for the data types
+        $datatypes = array("PEOPLE", "INCHES", "F", "F");
+	
+        $pubdate = "01/01/1952";
+	
+    
+        //Get the location
+        $location = explode("_", addslashes(rtrim($filename)));
         
         $datasetname = explode(".", $filename);
         $datasetNum = getDatasetID($datasetname[0]);
-	
+    
         $city = strtoupper($location[0]);
         $state = strtoupper(getStateNameByAbbreviation($location[1]));
         
         $location = getLocationID($state, "", $city, LOCATION_CITY);
         //echo "<br />" . "Location: " . $location . "<br />";
 
-      	//Process the entries
-    
+        //Process the entries
         foreach($tuples as $line) {
-			//Divide up the entry
-			$entry = explode(",", addslashes(rtrim($line)));
-			//Take the year_wk entry and change it to a more usable format
-			$year = floor($entry[0] / 100);
-			$startDay = (($entry[0] % 100) * 7) - 6;
-			$startDate = dayYear_to_YearMonthDay($startDay, $year);
-			$endDate = dayYear_to_YearMonthDay($startDay + 6, $year);
-			//Make insert queries for each data column
-			for($i = 0; $i < count($columns); $i++) {
-                $j = $i + 4;
-				$query = "INSERT INTO $columns[$i] VALUES (NULL, 
-													'$startDate',
-													'$endDate',
-													'$pubDate',
-													'WEEK',
-													'1',
-													'$location',
-													'0',
-													'$datasetNum',
-													'$entry[$j]',
-													'$datatypes[$i]',
-													'1',
-													'NONE',
-													'1',
-													'1',
-													'0')";
-				mysql_query($query) or die("$columns[$i] Insert Invalid " . mysql_error());
-			} 
-		}
-	}
-	
-	echo "Disease Data Inputted";
-	
+  
+            //Divide up the entry
+            $entry = explode(",", addslashes(rtrim($line)));
+
+            
+            $startDate = parse_date($entry[1]);
+            
+            $endDate = parse_date($entry[2]);
+            
+            
+            //Make insert queries for each data column
+            for($i = 0; $i < count($columns); $i++)
+            {
+                $j = $i + 6;
+                $query = "INSERT INTO $columns[$i] VALUES (NULL, 
+                                                    '$startDate',
+                                                    '$endDate',
+                                                    '$pubDate',
+                                                    'WEEK',
+                                                    '1',
+                                                    '$location',
+                                                    '0',
+                                                    '$datasetNum',
+                                                    '$entry[$j]',
+                                                    '$datatypes[$i]',
+                                                    '1',
+                                                    'NONE',
+                                                    '1',
+                                                    '1',
+                                                    '0')";
+                                                    
+                //echo $query . "<br />";
+            
+                mysql_query($query) or die("$query Insert Invalid " . mysql_error());
+            } 
+        }
+    
+    
+        echo "Disease Data Inputted";
+    
+    }
+    
+    
+    
+    function parse_date($in_date)
+    {
+    
+        $date = explode("/", addslashes(rtrim($in_date)));
+            
+        $new_date = new DateTime();
+            
+        $new_date->setDate($date[2],$date[0] ,$date[1]);
+        
+        return $new_date->format("Y-m-d");
+    }
+    
+    
+    
+    
+    
 	//Function will take a numbered day (out of 365) and a year and convert them into a Month-Day-Year date
 	//(I'm seriously bad at naming functions)
 	//Does not currently handle leap years (which would be pretty easy, but kinda unneeded)

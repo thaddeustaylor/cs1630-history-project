@@ -170,8 +170,8 @@
     $result = mysql_query(
 			"CREATE TABLE measurement_category (
 				_ID int primary key not null auto_increment,
-				desc char(255) not null,
-                inconvertible_flag boolean not null)")
+				description char(255) not null,
+                inconvertible_flag bool not null)")
                 
 	or die ("measurement_category Invalid: " . mysql_error());
     
@@ -239,7 +239,7 @@
     $result = mysql_query(
 			"CREATE TABLE measurement_unit (
 				_ID int primary key not null auto_increment,
-				desc chat(255) not null,
+				description char(255) not null,
                 category int not null)")
                 
 	or die ("measurement_unit Invalid: " . mysql_error());
@@ -327,10 +327,7 @@
     
 
     include("init_disease_data.php");
-    include("init_climate_data.php");
-    include("init_1910_census.php");
-    include("init_1920_census.php");
-    include("init_1930_census.php");
+    include("init_census_data.php");
     
     mysql_close();
     
