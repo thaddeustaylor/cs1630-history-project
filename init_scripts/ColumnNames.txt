@@ -1,7 +1,7 @@
+CASES;Measles Cases
 PRCP;Precipitation
 TMIN;Temperature, Low
 TMAX;Temperature, High
-CASES;Measles Cases
 TOTPOP;Population
 URBPOP;Population, Urban
 RURPOP;Population, Rural

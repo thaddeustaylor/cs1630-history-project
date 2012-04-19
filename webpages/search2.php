@@ -101,11 +101,29 @@
                                                         </div>
                                                 </div>
                                                 <p>Please select a location:</p>
-                                                <div class="control-group" id="location-group">
-                                                        <label class="control-label" for="location">Location:</label>
-                                                        <div class="controls" id="for-location">
-                                                                <select name="location" id="location" disabled="true">
-                                                                        <option value="NULL">Please Select a Location</option>
+                                                <div class="control-group" id="state-group">
+                                                        <label class="control-label" for="state">State:</label>
+                                                        <div class="controls" id="for-state">
+                                                                <select name="state" id="state" disabled="true">
+                                                                        <option value="NULL">Please Select a State</option>
+                                                                </select>
+                                                        </div>
+                                                
+                                                </div>
+                                                <div class="control-group" id="county-group">
+                                                        <label class="control-label" for="county">County:</label>
+                                                        <div class="controls" id="for-county">
+                                                                <select name="county" id="county" disabled="true">
+                                                                        <option value="NULL">Please Select a County</option>
+                                                                </select>
+                                                        </div>
+                                                
+                                                </div>
+                                                <div class="control-group" id="city-group">
+                                                        <label class="control-label" for="city">City:</label>
+                                                        <div class="controls" id="for-city">
+                                                                <select name="city" id="city" disabled="true">
+                                                                        <option value="NULL">Please Select a City</option>
                                                                 </select>
                                                         </div>
                                                 

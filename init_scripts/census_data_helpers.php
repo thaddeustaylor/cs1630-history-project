@@ -1,7 +1,7 @@
 <?php
 
     //12 is the first row of data after the metadata.
-    define("METADATA_OFFSET",     12);
+    define("METADATA_OFFSET",     10);
 
     // The column that has what kind of location the record is 
     // County = 1
@@ -11,17 +11,15 @@
 
     //indexes of the metadata
     define("COLUMN_NAMES",          0);
-    define("METADATA_START_DATE",   1);
-    define("METADATA_END_DATE",     2);
-    define("METADATA_PUB_DATE",     3);
-    define("METADATA_FREQ_UNIT",    4);
-    define("METADATA_FREQ_QTY",     5);
-    define("METADATA_NUMER_TYPE",   6);
-    define("METADATA_NUMER_VALUE",  7);
-    define("METADATA_DENOM_TYPE",   8);
-    define("METADATA_DENOM_VALUE",  9);
-    define("METADATA_IS_REAL",      10);
-    define("METADATA_IS_OBSOLETE",  11);
+    define("METADATA_PUB_DATE",     1);
+    define("METADATA_FREQ_UNIT",    2);
+    define("METADATA_FREQ_QTY",     3);
+    define("METADATA_NUMER_TYPE",   4);
+    define("METADATA_NUMER_VALUE",  5);
+    define("METADATA_DENOM_TYPE",   6);
+    define("METADATA_DENOM_VALUE",  7);
+    define("METADATA_IS_REAL",      8);
+    define("METADATA_IS_OBSOLETE",  9);
    
     include_once("helper_functions.php");
 
@@ -29,10 +27,7 @@ function parse_data($in_table)
 { 
     //get column names
     $col_names = explode(",", rtrim($in_table[COLUMN_NAMES]));
-    
-    //get meta data
-    $start_dates = explode(",", rtrim($in_table[METADATA_START_DATE]));
-    $end_dates = explode(",", rtrim($in_table[METADATA_END_DATE]));
+
     $pub_dates = explode(",", rtrim($in_table[METADATA_PUB_DATE]));
     
     $freq_units = explode(",", rtrim($in_table[METADATA_FREQ_UNIT]));
@@ -96,6 +91,13 @@ function parse_data($in_table)
             $row = addslashes(rtrim($row));
             $line = explode(",", $row);
             
+            
+            //if the line is a state ignore it.
+            if($line[1] == 0)
+                continue;
+            
+            //var_dump($line);
+            
             $state = strtoupper($line[0]);
             $county = strtoupper($line[2]);
             
@@ -112,13 +114,9 @@ function parse_data($in_table)
                     //$date = date_create_from_format("!Y", $start_dates[$j]);
                     
                     
-                    $date = new DateTime();
-                    $date->setDate($start_dates[$j], 01, 01);
-                    $current_start_date = date_format($date, "Y-m-d");
+                    $current_start_date = parse_date($line[3]);
                    
-                    $date = new DateTime();
-                    $date->setDate($end_dates[$j], 01, 01);
-                    $current_end_date = date_format($date, "Y-m-d"); 
+                    $current_end_date = parse_date($line[4]); 
                      
                     $date = new DateTime();
                     $date->setDate($pub_dates[$j], 01, 01);
@@ -126,6 +124,8 @@ function parse_data($in_table)
                     
                     //Set the table name to lower case as per our database convention
                     $table_name = strtolower($col_names[$j]); 
+		    
+                    $col_ID = $j+2;
                      
                     $query = "INSERT into $table_name values  (NULL, 
                                                                 '$current_start_date',
@@ -134,7 +134,7 @@ function parse_data($in_table)
                                                                 '$freq_units[$j]',
                                                                 '$freq_quantity[$j]',
                                                                 '$location',
-                                                                '$j',
+                                                                '$col_ID',
                                                                 '1',  
                                                                 '$line[$j]',
                                                                 '$numer_type[$j]',

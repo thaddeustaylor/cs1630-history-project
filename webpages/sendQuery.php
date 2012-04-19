@@ -136,12 +136,13 @@
 			$locResult = mysql_query("select * from locations where _ID = ".$locationID);
 			$locArray = mysql_fetch_array($locResult);
 			$locName = $locArray['name'];
+			$locX = $locArray['X'];
+			$locY = $locArray['Y'];
 			
         	/* Display results in a table */
-        	echo "<table align='center' border='1'>";
-			echo "<caption>$locName</caption>";
-			echo "<tr><th>Begin Date</th>";
-			echo "<th>End Date</th>";
+        	echo "<table align=center border=1>";
+			echo "<caption>$locName ($locX, $locY)</caption>";
+			echo "<tr><th>Date</th>";
 			echo "<th>$longNameOne</th>";
 			//if (!$typethree && !$typefour)
 			//{
@@ -163,7 +164,6 @@
 			for ($i = 0; $i < $counterOne; $i++)
 			{
 				echo "<tr><td>$typeOneBeginDateArray[$i]</td>";
-				echo "<td>$typeOneEndDateArray[$i]</td>";
 				echo "<td>$typeOneValArray[$i]</td>";
 				//if (!$typethree && !$typefour)
 				//{

@@ -30,13 +30,14 @@
 *   
 */		
 	/* Drop table if needed */
-	$result = mysql_query ("DROP TABLE IF EXISTS column_names") or die ("column_names Invalid: " . mysql_error());
+	$result = mysql_query ("DROP TABLE IF EXISTS column_names") or die ("column_names drop Invalid: " . mysql_error());
 	/* Create table */
 	$result = mysql_query(
 			"CREATE TABLE column_names (
-				name char(35) primary key not null, 
+                col_ID int primary key not null auto_increment,
+				name char(35) not null, 
 				long_name char(255) not null)")
-	or die ("column_names Invalid: " . mysql_error());
+	or die ("Create colum_names Invalid: " . mysql_error());
 
 /******************************************
 *    Create the dataset_master table
@@ -89,7 +90,7 @@
                                                 '$table[4]',
                                                 '$table[5]',
                                                 '$table[6]',
-                                                '$table[6]'
+                                                '$table[7]'
                                                 )";
                                                               
             mysql_query($query) or die ("locations Invalid insert " . mysql_error());
@@ -316,7 +317,8 @@
         if($num == 0)
         {
             /* Insert column name and long name into the table if doesn't exist */
-            $query = "INSERT into column_names values ('$table[0]', 
+            $query = "INSERT into column_names values (NULL,
+                                                       '$table[0]', 
                                                        '$table[1]')";
                                                               
             mysql_query($query) or die ("column_names Invalid insert " . mysql_error());

@@ -47,8 +47,10 @@
         //Create an array for the data types
         $datatypes = array("PEOPLE", "INCHES", "F", "F");
 	
-        $pubdate = "01/01/1952";
-	
+        
+        $pubdate = new DateTime();
+            
+        $pubdate->setDate("1952","01" ,"01");
     
         //Get the location
         $location = explode("_", addslashes(rtrim($filename)));
