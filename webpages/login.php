@@ -49,15 +49,17 @@ function validate()
 		}
         $.ajax({
             type: "POST",
-            url: "/webtest/cs1630History/webpages/scripts/validate.php",
+            /*url: "/webtest/cs1630History/webpages/scripts/validate.php",*/
+			url: "scripts/validate.php",
             data: "email="+email+"&pwd="+password,
             success: function(html){
                 if(html=='true')
                 {
-                    window.location = "/webtest/cs1630History/webpages/index.php";
+                    window.location = "index.php";
                 }
                 else
                 {
+			alert(html);
 					$("#email-group").addClass("error");
 					$("#password-group").addClass("error");
 					if( $(".help-inline").length == 0 )

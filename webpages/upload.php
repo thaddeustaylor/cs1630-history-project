@@ -9,9 +9,7 @@ $arg_upload_submitted = false;
 import_request_variables("p", "arg_");
 
 //Temporarily manually logging myself in since login is not working for some reason.
-$_SESSION['email'] = "emm82@pitt.edu";
-$_SESSION['role'] = 1;
-$_SESSION['logged'] = true;
+
 
 $user_email = "";
 $user_role = "";

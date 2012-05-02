@@ -181,7 +181,7 @@
                 }
             }
         });
-        }/*
+        }
         $("#location").change(function() {
                 locationData = $("#location").val();
                 $.ajax({
@@ -209,7 +209,7 @@
                 }
             }
         });
-        });*/
+        });
         function validate()
         {
                 /*var dateOne = $("#beginDate").val();

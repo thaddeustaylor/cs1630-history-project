@@ -432,8 +432,8 @@ MilkChart.escape = function(str) {
 MilkChart.Base_rpb = new Class({
 	Implements: [Options,Events],
 		options: {
-			width: 1500,	// default width for the graph
-			height: 1000,	// default height for the graph
+			width: 1200,	// default width for the graph
+			height: 800,	// default height for the graph
 			colors: ['#4f81bd', '#c0504d', '#9bbb59', '#8064a2', '#4198af', '#db843d'],
 			padding: 12,
 			font: "Verdana",
@@ -460,11 +460,17 @@ MilkChart.Base_rpb = new Class({
 			ignoreFirstColumn: false,
 			mapping: false,
 			fillArea: false,
-			motion: false
+			motion: false,
+			xaxis: -1,
+			yaxis: -1,
+			color: -1,
+			size: -1,
+			time: -1,
+			location: -1
 		},
 		setStep: function(ev) {
 			var value = ev.newValue;
-			var timestep_approx = this.minTime + value*(this.maxTime - this.minTime)/1000;
+			var timestep_approx = this.minTime + Number(value)*(this.maxTime - this.minTime)/1000;
 			var i =0;
 			var disp = 1000;
 			var ind = -1;
@@ -475,8 +481,8 @@ MilkChart.Base_rpb = new Class({
 					ind = i;
 				}
 			}
-			if(index != -1) {
-				this.timestep = this.data.time[index];
+			if(ind != -1) {
+				this.timestep = this.data.time[ind];
 				this.render();
 			}
 		},
@@ -484,14 +490,12 @@ MilkChart.Base_rpb = new Class({
 		initialize: function(el, cur, options) {
 			this.setOptions(options);	// initialize the options
 			this.ssc = -1;	// series column
-			this.tc = -1;	// time column
-			this.xc = 1;	// x column
-			this.sc = 3;	// size column
-			this.cc = 4;	// color column
-			if(this.options.bubble)
-				this.yc = [2];	// y column(s)
-			else
-				this.yc = [2];	// y column(s)
+			this.tc = this.options.time;	// time column
+			this.xc = this.options.xaxis;	// x column
+			this.sc = this.options.size;	// size column
+			this.cc = this.options.color;	// color column
+			this.yc = [this.options.yaxis];	// y column(s)
+			
 			this.element = document.id(el);
 			this.width = this.options.width;
 			this.height = this.options.height;
@@ -502,6 +506,7 @@ MilkChart.Base_rpb = new Class({
 			this.ctx = this._canvas.getContext('2d');
 			this.grid_width = this.options.width - 2*this.options.padding;
 			this.grid_height = this.options.height - 2*this.options.padding;
+			this.canvas_init = false;
 
 			this.grid_left_offset = this.options.padding;
 			this.grid_right_offset = this.options.padding;
@@ -526,6 +531,8 @@ MilkChart.Base_rpb = new Class({
 			this.maxColor = 0;
 			this.minColor = 0;
 			
+			this.timestep = 0;
+			
 			this.data = {
 				title: this.element.title,
 				xLabel: '',
@@ -547,7 +554,12 @@ MilkChart.Base_rpb = new Class({
 			this.getData();
 			
 			if (this.options.motion && cur && cur.firstChild.addEventListener) {
-				cur.firstChild.addEventListener('DOMCharacterDataModified', this.setStep, false);
+				cur.firstChild.addEventListener('DOMCharacterDataModified', function(ev) { 
+					// this function executes at a larger scope... 
+					
+					// render the graph
+					window.mychart.setStep(ev);
+				}, false);
 			}
 			
 			
@@ -658,6 +670,7 @@ MilkChart.Base_rpb = new Class({
 			var keySquareWidth = 10;
 			
 			this.data.legend.each(function(item) {
+				this.ctx.font =  "10px Verdana";
 				this.ctx.fillStyle = this.options.fontColor;
 				this.ctx.textAlign = "left";
 				item = MilkChart.escape(item)
@@ -803,6 +816,10 @@ MilkChart.Base_rpb = new Class({
 				}
 			}
 		},
+		clearChart: function() {
+			this.ctx.fillStyle = this.options.background;
+			this.ctx.fillRect(0,0, this.width, this.height);//this.bounds[0].x, this.bounds[0].y, this.chartWidth, this.chartHeight);
+		},
 		swapAxes: function() {
 			var row = this.data.rowNames.slice(0);
 			var col = this.data.colNames.slice(0);
@@ -839,7 +856,7 @@ MilkChart.Base_rpb = new Class({
 			return req;
 		},
 		getData: function() {
-			var table = document.getElementById("data");
+			var table = this.element;
 
 			for (var i = 0, row; row = table.rows[i]; i++) {
 				var y_ind = 0;
@@ -848,13 +865,13 @@ MilkChart.Base_rpb = new Class({
 						if (j == this.x_col) {
 							this.data.xLabel = col.innerHTML;
 						}
-						else if (this.options.bubble && j == this.size_col) {
+						if (this.options.bubble && j == this.size_col) {
 							this.data.legend.push('Size: ' + col.innerHTML);
 						}
-						else if (this.options.bubble && j == this.color_col) {
+						if (this.options.bubble && j == this.color_col) {
 							this.data.legend.push('Color: ' + col.innerHTML);
 						}
-						else if (contains(this.yc, j)) {
+						if (contains(this.yc, j)) {
 							if(!this.options.bubble)
 								this.data.legend.push(col.innerHTML);
 							else
@@ -864,9 +881,13 @@ MilkChart.Base_rpb = new Class({
 					else {
 						var val = 0;
 						val = Number(col.innerHTML);
-						if (!$type(val)) {
+						if (!val) {
+							var val = date_to_float(new Date(col.innerHTML));
+						}
+						if (!val) {
 							var val = col.innerHTML.toFloat();
 						}
+						
 						if (j == this.x_col) {
 							this.data.x.push(val);
 							if (i==1 || val > this.maxX)
@@ -874,31 +895,31 @@ MilkChart.Base_rpb = new Class({
 							if (i==1 || val < this.minX)
 								this.minX = val;
 						}
-						else if (j == this.size_col) {
+						if (j == this.size_col) {
 							this.data.size.push(val);
 							if (i==1 || val > this.maxSize)
 								this.maxSize = val;
 							if (i==1 || val < this.minSize)
 								this.minSize = val;
 						}
-						else if (j == this.color_col) {
+						if (j == this.color_col) {
 							this.data.color.push(val);
 							if (i==1 || val > this.maxColor)
 								this.maxColor = val;
 							if (i==1 || val < this.minColor)
 								this.minColor = val;
 						}
-						else if (j == this.time_col) {
-							this.data.time.push(val);
+						if (j == this.time_col) {
+							this.data.time.push(date_to_float(new Date(col.innerHTML)));
 							if (i==1 || val > this.maxTime)
 								this.maxTime = val;
 							if (i==1 || val < this.minTime)
 								this.minTime = val;
 						}
-						else if (j == this.series_col) {
+						if(j == this.series_col) {
 							this.data.series.push(col.innerHTML);
 						}
-						else if (contains(this.yc, j)) {
+						if (contains(this.yc, j)) {
 							if(!this.data.y[y_ind]) {
 								this.data.y.push([]);
 							}
@@ -919,8 +940,21 @@ MilkChart.Base_rpb = new Class({
 		},
 		render: function() {
 			this.ctx.save();
-			// Sets up bounds for the graph, key, and other paddings
-			this.prepareCanvas();
+			
+			if(!this.canvas_init) {
+				// Sets up bounds for the graph, key, and other paddings
+				this.prepareCanvas();
+				this.canvas_init = true;
+			}
+			else {
+				this.clearChart();
+				if(this.data.title)
+					this.drawTitle();
+				if(this.data.xLabel)
+					this.drawXLabel();
+				if(this.data.yLabel)
+					this.drawYLabel();
+			}
 			
 			if(!this.options.mapping) {
 			// Draws the X and Y axes lines
@@ -951,7 +985,7 @@ MilkChart.Base_rpb = new Class({
 			if(size_range == 0)
 				size_range = 10000;
 				
-			for(var j=0; j <this.data.y[j].length; j++) {
+			for(var j=0; j <this.data.y.length; j++) {
 				var x_pos_pre = 0;
 				var y_pos_pre = 0;
 				for(var i=0; i<this.data.x.length; i++) {
@@ -960,7 +994,7 @@ MilkChart.Base_rpb = new Class({
 					var x_pos = this.bounds[0].x + (this.chartWidth/x_range)*(x_val - this.minX);
 					var y_pos = this.bounds[0].y + (this.chartHeight/y_range)*(this.maxY - y_val);
 					
-					if (!this.options.dating || this.timestep == this.data.date[i]) {
+					if (!this.options.motion || this.timestep == this.data.time[i]) {
 						if (this.options.showLines) {
 							if(i > 0) {
 								this.ctx.beginPath();
@@ -1236,7 +1270,8 @@ MilkChart.Map_rpb = new Class({
     *********************************/
     Extends: MilkChart.Bubble_rpb,
     options: {
-        mapping: true
+        mapping: true,
+		showKey:	true
     },
     initialize: function(el, cur, options) {
         this.parent(el, cur, options);
@@ -1255,7 +1290,8 @@ MilkChart.Map_Motion_rpb = new Class({
     Extends: MilkChart.Bubble_rpb,
     options: {
         mapping: true,
-		motion:	 true
+		motion:	 true,
+		showKey:	true
     },
     initialize: function(el, cur, options) {
         this.parent(el, cur, options);

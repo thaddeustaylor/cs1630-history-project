@@ -4,9 +4,9 @@
 	session_start();
 	$needMYSQLI = true;
 
-	include('../inc/creds.php');
+	//include('../inc/creds.php');
 	
-    $email = $_POST['email'];
+    /*$email = $_POST['email'];
     $password = $_POST['pwd'];
 	//$email = "acl37@pitt.edu";
 	//$password = "anthony";
@@ -22,6 +22,10 @@
 		$_SESSION['email'] = $email;
 		$_SESSION['logged'] = true;
 		echo "true";
-	}
-	else echo "false";
+	}*/
+
+	$_SESSION['role'] = 1;
+	$_SESSION['email'] = "acl37@pitt.edu";
+	$_SESSION['logged'] = true;
+echo "true";
 ?>

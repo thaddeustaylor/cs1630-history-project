@@ -1,9 +1,3 @@
-<html>
- <head>
-  <title>Script to Show Database</title>
- </head>
- <body>
-
 <?php
 
     define("LOCATION_ALL",           0);
@@ -147,7 +141,7 @@ function getLocationID($state, $county, $city, $choice = -1)
     {
         $data = mysql_fetch_array($result, MYSQL_ASSOC);
         
-        array_push($city_IDs, $data['child_ID']);  
+        array_push($city_IDs, (int)$data['child_ID']);  
         //echo $data['child_ID'] . "<br />";
             
     }
@@ -262,7 +256,7 @@ function getLocationID($state, $county, $city, $choice = -1)
     {
         $data = mysql_fetch_array($result, MYSQL_ASSOC);
         
-        array_push($county_IDs, $data['parent_ID']);
+        array_push($county_IDs, (int)$data['parent_ID']);
         //echo $data['child_ID'] . "<br />";
     }
     
@@ -500,5 +494,3 @@ function getStateNameByAbbreviation($state){
 
 ?>
 
- </body>
-</html>

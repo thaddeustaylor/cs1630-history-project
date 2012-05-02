@@ -162,34 +162,114 @@
   <script>
         var typeone = null; 
         var typetwo = null;
-        var locationData = null;
+		var typethree = null;
+		var typefour = null;
+        var state = null;
         var dates = null;
         $("#typeone").change(function() {
                 typeone = $("#typeone").val();
-                if(typeone != null && typetwo != null) popLocation();
-                else $("#location").attr('disabled', true);
+                if(typeone != null && typetwo != null) {
+					if(typethree == null) typethree = "zzz";
+					if(typefour == null) typefour = "zzz";
+					popLocation();
+				}
+                else $("#state").attr('disabled', true);
         });
         $("#typetwo").change(function() {
                 typetwo = $("#typetwo").val();
-                if(typeone != null && typetwo != null) popLocation();
-                else $("#location").attr('disabled', true);
+                if(typeone != null && typetwo != null) {
+					if(typethree == null) typethree = "zzz";
+					if(typefour == null) typefour = "zzz";
+					popLocation();
+				}
+                else $("#state").attr('disabled', true);
         });
-        function popLocation()
+		$("#typethree").change(function() {
+                typethree = $("#typethree").val();
+                if(typeone != null && typetwo != null) {
+					if(typethree == null) typethree = "zzz";
+					if(typefour == null) typefour = "zzz";
+					popLocation();
+				}
+                else $("#state").attr('disabled', true);
+        });
+		$("#typefour").change(function() {
+                typefour = $("#typefour").val();
+                if(typeone != null && typetwo != null) {
+					if(typethree == null) typethree = "zzz";
+					if(typefour == null) typefour = "zzz";
+					popLocation();
+				}
+                else $("#state").attr('disabled', true);
+        });
+		$("#state").change(function() {
+			state = $("#state").val();
+			if(state != null) popCountyAndCity();
+		});	
+        function popCountyAndCity()
         {
-                $.ajax({
+            $.ajax({
             type: "GET",
-            url: "scripts/searchResults.php",
-            data: "function=1&typeone="+typeone+"&typetwo="+typetwo,
+            url: "scripts/searchResults2.php",
+			            data: "function=2&typeone="+typeone+"&typetwo="+typetwo+"&typethree="+typethree+"&typefour="+typefour+"&state="+state,
+  
             success: function(html){
                 if(html!='false')
                 {
-                                        $("#location").removeAttr('disabled');
-                                        var locations = html.split(", ");
-                                        var locationDrop = $("#location");
-                                        for(i = 0; i <  locations.length; i++)
+                    $("#county").removeAttr('disabled');
+					$("#city").removeAttr('disabled');
+					var cityAndStates = html.split(" / ");
+					var cities = cityAndStates[1];
+					var counties = cityAndStates[0];
+					
+					if(cities != "FALSE")
+					{
+						var cityDrop = $("#city");
+						cities = cities.split(" , ");
+						for(i = 0; i < cities.length; i++)
+						{
+							var idsplit = cities[i].split(" - ");
+							cityDrop.append($("<option />").val(idsplit[1]).text(idsplit[0]));
+						}
+					}
+					if(counties != "FALSE")
+					{
+						var countiesDrop = $("#county");
+				
+						counties = counties.split(", ");
+
+						for(i = 0; i < counties.length; i++)
+						{
+							
+							var idsplit = counties[i].split(" - ");
+							countiesDrop.append($("<option />").val(idsplit[1]).text(idsplit[0]));
+						}
+					}										
+                }
+                else
+                {
+
+                                        alert('Im sorry. There were no common locations found.');
+                }
+            }
+			});
+        }
+		function popLocation()
+		{
+			$.ajax({
+            type: "GET",
+            url: "scripts/searchResults2.php",
+          data: "function=1&typeone="+typeone+"&typetwo="+typetwo+"&typethree="+typethree+"&typefour="+typefour,
+            success: function(html){
+                if(html!='false')
+                {
+                                        $("#state").removeAttr('disabled');
+                                        var states = html.split(", ");
+                                        var stateDrop = $("#state");
+                                        for(i = 0; i <  states.length; i++)
                                         {       
-                                            var idsplit = locations[i].split(" - ");
-                                            locationDrop.append($("<option />").val(idsplit[1]).text(idsplit[0]));
+                                            var idsplit = states[i].split(" - ");
+                                            stateDrop.append($("<option />").val(idsplit[1]).text(idsplit[0]));
                                         }
                 }
                 else
@@ -198,43 +278,10 @@
                                         alert('Im sorry. There were no common locations found.');
                 }
             }
-        });
-        }/*
-        $("#location").change(function() {
-                locationData = $("#location").val();
-                $.ajax({
-            type: "GET",
-            url: "scripts/searchResults.php",
-            data: "function=2&typeone="+typeone+"&typetwo="+typetwo+"&location="+locationData,
-            success: function(html){
-                if(html!='false')
-                {
-                                        $("#beginDate").removeAttr('disabled');
-                                        $("#endDate").removeAttr('disabled');
-                                        var dates = html.split(", ");
-                                        var stringOfDates = "";
-                                        for(i = 0; i < dates.length; i++)
-                                        {
-                                                stringOfDates = stringOfDates + dates[i] + "<br />";
-                                        }
-                                        $("#dateRange").html('<p>Possible date spans:</p><p>' + stringOfDates + '</p>');
-                                        
-                }
-                else
-                {
-
-                                        alert('Im sorry. There were no common dates found.');
-                }
-            }
-        });
-        });*/
-        function validate()
-        {
-                /*var dateOne = $("#beginDate").val();
-                var dateTwo = $("#endDate").val();*/
-                return true;
-                
-        }
+			});
+		}
+		
+      
 </script>
 
   <script src="js/plugins.js"></script>

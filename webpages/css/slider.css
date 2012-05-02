@@ -1,0 +1,28 @@
+.slider {
+	height: 20px;
+	width: 528px;
+	background:transparent url(../img/slider-bar.gif) repeat-x 0px 9px;
+}
+	.slider .knob {
+		background: #000;
+		width: 20px;
+		height: 20px;
+		background:transparent url(../img/slider.png) no-repeat 0px 0px;
+	}
+
+#currstep {
+	height: 0px;
+	line-height: 0px;
+}
+
+.advanced {
+	width: 400px;
+	margin: 5px 0;
+	background: #CCC;
+}
+	.advanced .knob {
+		cursor: pointer;
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+		border-radius: 6px;
+	}
